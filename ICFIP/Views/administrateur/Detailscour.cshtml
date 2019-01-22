@@ -1,0 +1,53 @@
+﻿@model ICFIP.Entites.Cour
+
+@{
+    ViewBag.Title = "Detailscour";
+}
+
+
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Details  cour</h2>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <div class="display-label">
+                        @*@Html.DisplayNameFor(model => model.IdCour)*@
+                    </div>
+                    <div class="display-field">
+                        @Html.HiddenFor(model => model.IdCour)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.Libelle)
+                        :
+                        @Html.DisplayFor(model => model.Libelle)
+                    </div>
+
+                    <p>
+                        <h1 class="btn btn-primary">
+                            @Html.ActionLink("Modifier", "Pssageditcour1", new { id = Model.IdCour })
+                        </h1>
+                        <h1 class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "Gerecour")
+                        </h1>
+
+                    </p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    a {
+        color: white;
+    }
+</style>

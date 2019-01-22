@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ICFIP" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\anas\\Desktop\\ICFIP\ PROJECT\\test1\\exemple\ icfip\\exemple\ 1\\ICFIP\\ICFIP\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\anas\\Desktop\\ICFIP\ PROJECT\\test1\\exemple\ icfip\\exemple\ 1\\ICFIP\\ICFIP\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ICFIP.Data.ICFIPEntities-Web.config Connection String" description="" value="Data Source=ANAS-PC;User ID=sa;Password=1234" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\anas\\Desktop\\ICFIP\ PROJECT\\test1\\exemple\ icfip\\exemple\ 1\\ICFIP\\ICFIP\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ICFIP.Data.ICFIPEntities']/@connectionString" />
+  </parameter>
+  <parameter name="ICFIP.Entites.ICFIPEntities-Web.config Connection String" description="" value="Data Source=ANAS-PC;User ID=sa;Password=1234" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\anas\\Desktop\\ICFIP\ PROJECT\\test1\\exemple\ icfip\\exemple\ 1\\ICFIP\\ICFIP\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ICFIP.Entites.ICFIPEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." value="Server=tcp:anasdbserver.database.windows.net,1433;Database=ICFIP;User ID=anas-pc@anasdbserver;Password=ABBASSI1992;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\anas\\Desktop\\ICFIP\ PROJECT\\test1\\exemple\ icfip\\exemple\ 1\\ICFIP\\ICFIP\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

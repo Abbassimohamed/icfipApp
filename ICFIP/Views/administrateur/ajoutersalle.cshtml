@@ -1,0 +1,68 @@
+﻿@model ICFIP.Entites.Salle
+
+@{
+    ViewBag.Title = "ajoutersalle";
+}
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>ajouter salle</h2>
+            </div>
+
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+
+
+                    <div class="editor-label">
+                        @*@Html.LabelFor(model => model.IdSalle)*@
+                    </div>
+                    <div class="editor-field">
+                        @Html.HiddenFor(model => model.IdSalle)
+                        @Html.ValidationMessageFor(model => model.IdSalle)
+                    </div>
+
+                    <div class="editor-label">
+                        @*@Html.LabelFor(model => model.IdAdministrateur)*@
+                    </div>
+                    <div class="editor-field">
+                        @Html.HiddenFor(model => model.IdAdministrateur)
+                        @Html.ValidationMessageFor(model => model.IdAdministrateur)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.DisplayName("Nom Du Salle")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Libelle)
+                        @Html.ValidationMessageFor(model => model.Libelle)
+                    </div>
+                    <p>
+                        <input class="btn btn-info" type="submit" value="Ajouter" />
+                    </p>
+
+                    <p >
+                        @Html.ActionLink("Retourner", "Index")
+                    </p>
+
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

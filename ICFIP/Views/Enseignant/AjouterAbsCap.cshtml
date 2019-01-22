@@ -1,0 +1,54 @@
+﻿@model ICFIP.Entites.Etudiants
+
+@{
+    ViewBag.Title = "AjouterAbs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="alert alert-info col-md-2 col-md-offset-5" role="alert" style="color:#31b0d5 ;margin-top:-1px   ;font-family: 'Lobster', cursive; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">Liste D'appel</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    <div class="col-md-6 col-md-offset-3 " style="animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">
+        <table class="table table-bordered">
+            <tr class="btn-primary">
+                <td>Nome </td>
+                <td>Prenom</td>
+                <td>Presence </td>
+
+
+
+            </tr>
+            @for (var i = 0; i < Model.ListeEtudiants.Count; i++)
+            {
+                <tr class="btn-info">
+                    <td>@Html.HiddenFor(m => Model.ListeEtudiants[i].Idetudiant)</td>
+
+                    <td>@Html.HiddenFor(m => Model.ListeEtudiants[i].UserId)</td>
+                    <td>@Html.DisplayFor(m => Model.ListeEtudiants[i].Nom)</td>
+                    <td>@Html.DisplayFor(m => Model.ListeEtudiants[i].Prenom)</td>
+                    <td>@Html.CheckBoxFor(m => Model.ListeEtudiants[i].BoolIsPresnece)</td>
+
+                </tr>
+            }
+        </table>
+    </div>
+    <div >
+ 
+        <input type="submit" class="btn  alert-info btn-lg btn-block  col-xs-6" value="Enregistrer" style="margin-left:26%;width:20%;animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s" />
+ 
+    </div>
+
+}
+<div class="btn  alert-info btn-lg btn-block col-xs-6" style="margin-left:7%;width:20%;animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">
+
+    @Html.ActionLink("retourner", "Index")
+</div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

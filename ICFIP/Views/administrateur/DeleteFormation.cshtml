@@ -1,0 +1,61 @@
+﻿@model ICFIP.Entites.Formation
+
+@{
+    ViewBag.Title = "DeleteFormation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Supprimer Formation</h2>
+
+                <h3>Vous etes sur?</h3>
+            </div>
+
+            <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <div class="display-label">
+                        @*@Html.DisplayNameFor(model => model.IdFormation)*@
+                    </div>
+                    <div class="display-field">
+                        @Html.HiddenFor(model => model.IdFormation)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Nom Formation")
+                        :
+                        @Html.DisplayFor(model => model.LibelleFormation)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Description Formation")
+                        :
+                        @Html.DisplayFor(model => model.DescriptionFormation)
+                    </div>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <p>
+                            <input type="submit" class="btn btn-primary" value="Supprimer" />
+                        </p>
+                        <p class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "GereFormation")
+                        </p>
+                    }
+                </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+<style>
+    a {
+        color: white;
+    }
+</style>

@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Espace Enseignant :Certificat d'aptitude professionnelle";
+}
+
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+</style>
+
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script>
+
+
+
+    $(function () {
+        $("#btnAbscap").click(function () {
+
+            var Idca = document.getElementById("cap").options[document.getElementById('cap').selectedIndex].value;
+            var Idco = document.getElementById("cour").options[document.getElementById('cour').selectedIndex].value;
+            var Idni = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterAbsCap")' + "?IdCap=" + Idca + "+&IdcOUR=" + Idco + "&IdNiv=" + Idni
+            $(this).attr("href", path);
+
+      });
+
+
+    });
+
+
+
+    $(function () {
+        $("#btnNotecap").click(function () {
+
+            var Idca = document.getElementById("cap").options[document.getElementById('cap').selectedIndex].value;
+            var Idco = document.getElementById("cour").options[document.getElementById('cour').selectedIndex].value;
+            var Idni = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterNotecap")' + "?IdCap=" + Idca + "+&IdcOUR=" + Idco + "&IdNiv=" + Idni
+            $(this).attr("href", path);
+
+        });
+
+
+    });
+
+
+</script>
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+
+        <hgroup class="title">
+            <h1 class="alert alert-info col-md-8 col-md-offset-3" role="alert" style="color:#31b0d5 ;margin-top:-1px   ;font-family: 'Lobster', cursive; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">@ViewBag.Title</h1>
+        </hgroup>
+
+
+
+        <div class="row">
+            <div class="col-md-4 " style="animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">
+
+                <div style="margin-top:20%" class="col-md-6 col-md-offset-12">
+                    <div style="width:200%;">
+                        @Html.DropDownList("GroupIdcap", null, "Selectionnez CAP", new { @class = "form-control btn-info  btn-block", id = "cap" })
+                    </div>
+                    <div style="width:200%; margin-top:5%;">
+                        @Html.DropDownList("GroupIdcour", null, "Selectionnez Cours", new { @class = "form-control btn-info", id = "cour" })
+                    </div>
+                    <div style="width:200%; margin-top:5%;">
+                        @Html.DropDownList("Radiobtn", null, "Selectionnez Année", new { @class = "form-control btn-info", id = "niv" })
+                    </div>
+
+                    <div class=" btn  alert-info btn-lg btn-block" style="margin-left:10%; margin-top:5%;">
+                        @Html.ActionLink("Absence", "AjouterAbsCap", "Enseignant", null, new { @id = "btnAbscap" })
+                    </div>
+                <br>
+                    <div class=" btn  alert-info btn-lg btn-block" style="margin-left:10%; margin-top:2%;">
+                        @Html.ActionLink("Note", "AjouterNotecap", "Enseignant", null, new { @id = "btnNotecap" })
+
+                    </div>
+                    <br>
+                    <div class="btn  alert-info btn-lg btn-block" style="margin-left:10%; margin-top:2%;">
+                        @Html.ActionLink("Retourtner", "Index")
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </fieldset>
+}

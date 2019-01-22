@@ -1,0 +1,549 @@
+﻿@model IEnumerable<ICFIP.Entites.Cour>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+   
+
+<div class="col-xs-12 col-md-4 col-lg-offset-4 "><h1 class="text-primary  " >  Espace Administrateur </h1></div>
+
+<div id="block1">
+
+    <div class="wrapper">
+
+
+
+   
+
+
+        <div class="panel peterriver">
+            <div class="front">
+                <div class="box1">
+                    <h2>Etudiant</h2>
+                    <i class="fa fa-diamond"></i>
+                </div>
+            </div>
+            <div class="back">
+                <div class="box2">
+                    <h3>@Html.ActionLink("Gerer Etudiant", "GetListEtudiant")</h3>
+</div>
+            </div>
+        </div>
+
+        <!-- End panel  -->
+
+        <div class="panel silver">
+            <div class="front">
+                <div class="box1">
+                    <h2>Branche</h2>
+                    <i class="fa fa-cubes"></i>
+                </div>
+            </div>
+            <div class="back">
+                <div class="box2">
+                    <h3> @Html.ActionLink("Gerer Branche", "GereSpecialite")</h3>
+</div>
+            </div>
+        </div>
+
+        <!-- End panel  -->
+        <!-- Start panel -->
+
+        <div class="panel peterriver">
+            <div class="front">
+                <div class="box1">
+                    <h2>Formation</h2>
+                    <i class="fa fa-video-camera"></i>
+                </div>
+            </div>
+            <div class="back">
+                <div class="box2">
+                    <h3>@Html.ActionLink("Gerer Formation", "GereFormation")</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- End panel-->
+        <div class="panel silver">
+            <div class="front">
+                <div class="box1">
+                    <h2>Cour</h2>
+                    <i class="fa fa-music"></i>
+                </div>
+            </div>
+            <div class="back">
+                <div class="box2">
+                    <h3>  @Html.ActionLink("Gerer Cour", "Gerecour")</h3>
+</div>
+            </div>
+        </div>
+        <!-- End panel  -->
+
+        <div class="panel peterriver">
+            <div class="front">
+                <div class="box1">
+                    <h2>Enseignant</h2>
+                    <i class="fa fa-desktop"></i>
+                </div>
+            </div>
+            <div class="back">
+                <div class="box2">
+                    <h3>   @Html.ActionLink("Gerer Enseignant", "GetListEnseignant")</h3>
+</div>
+            </div>
+        </div>
+        <!-- End panel  -->
+    </div>
+    <br><br><br><br><br><br>
+   
+</div>
+
+
+
+
+
+
+<style>
+ 
+
+    a{
+        color:white;
+    }
+
+.wrapper {
+  width: 980px;
+  padding: 14% 0 0 0;
+  height: auto;
+  margin: 0 auto;
+  display: table;
+}
+
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+
+
+/* Flip Panel */
+
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+
+.panel {
+  margin: 0 auto;
+  height: 180px;
+  width: 192px;
+  position: relative;
+  float: left;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  color: white;
+}
+
+.panel .front,
+.panel .back {
+  text-align: center
+}
+
+.panel .front {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.panel .back {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.panel.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.panel.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.panel p {
+  margin: 25px 0 15px;
+}
+
+.panel p,
+.panel i {
+  color: #ffffff;
+  display: block
+}
+
+.panel:hover .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.panel:hover .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.box1,
+.box2 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.box1 {
+  height: 120px;
+  width: 192px;
+}
+
+.box2 {
+  height: 120px;
+  width: 192px;
+}
+
+.panel .front .box1,
+.panel .back .box2 {
+  opacity: .9;
+  text-align: center;
+}
+
+.army .front .box1,
+.army .back .box2 {
+  background: #706D3C
+}
+
+.orange .front .box1,
+.orange .back .box2 {
+  background: #E65527
+}
+
+.teal .front .box1,
+.teal .back .box2 {
+  background: #37A5B3
+}
+
+.plum .front .box1,
+.plum .back .box2 {
+  background: #363948
+}
+
+.purple .front .box1,
+.purple .back .box2 {
+  background: #716F84
+}
+
+.peterriver .front .box1,
+.peterriver .back .box2 {
+  background: #3498db
+}
+
+.sunflower .front .box1,
+.sunflower .back .box2 {
+  background: #f1c40f
+}
+
+.pomegranate .front .box1,
+.pomegranate .back .box2 {
+  background: #c0392b
+}
+
+.silver .front .box1,
+.silver .back .box2 {
+  background: #212121
+}
+
+.emerald .front .box1,
+.emerald .back .box2 {
+  background: #2ecc71
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="container col-md-offset-3">
+    
+
+   
+
+    <div class="card-container ">
+        <div class="card">
+            <div class="front">
+                <span class="fa fa-user"></span>
+            </div>
+            <div class="back">@Html.ActionLink("Gerer Etudiant", "GetListEtudiant")</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <span class="fa fa-cogs"></span>
+            </div>
+            <div class="back">@Html.ActionLink("Gerer Branche", "GereSpecialite")</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <span class="fa fa-code"></span>
+            </div>
+            <div class="back">@Html.ActionLink("Gerer Formation", "GereFormation")</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <span class="fa fa-cogs"></span>
+            </div>
+            <div class="back">@Html.ActionLink("Gerer Cour", "Gerecour")</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <span class="fa fa-user"></span>
+            </div>
+            <div class="back">@Html.ActionLink("Gerer Enseignant", "GetListEnseignant")</div>
+        </div>
+    </div>
+</div>*@
+
+
+@*<style>
+    @@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    a{
+        color:white;
+    }
+
+.card-container{
+  perspective: 900px;
+  margin-right: 2px;
+}
+
+.card{
+  position: relative;
+  width: 200px;
+  height: 110px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.front,.back{
+  position: absolute;
+   background: #337ab7;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+}
+
+.front{
+     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.back{
+     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-container:hover .card{
+  transform: rotateY(180deg);
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+</style>
+
+
+
+
+<ul class="menu">
+    <li title="home"><a href="#" class="home">home</a></li>
+    <li title="search"><a href="#" class="search">search</a></li>
+    <li title="about"><a href="#" class="active about">about</a></li>
+    <li title="pencil"><a href="#" class="pencil">pencil</a></li>    
+    <li title="archive"><a href="#" class="archive">archive</a></li>
+    
+</ul>
+<style>
+@@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #fff4f5;
+    margin-top: 2.5cm;
+}
+
+.menu li a {
+  display: block;
+  height: em;
+  width: 5em;
+  text-indent: -500em;
+  line-height: 5em;
+  text-align: center;
+  color: #337ab7;
+  background: #fff4f5;
+  position: relative;
+  border-bottom: 1px solid #ffe2e3;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu li a:before {
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+}
+
+.menu li a.search:before {
+  content: "\f002";
+}
+
+.menu li a.archive:before {
+  content: "\f187";
+}
+
+.menu li a.pencil:before {
+  content: "\f040";
+}
+
+.menu li a.contact:before {
+  content: "\f003";
+}
+
+.menu li a.about:before {
+  content: "\f007";
+}
+
+.menu li a.home:before {
+  content: "\f015";
+}
+
+.menu li a:hover {
+  background: #337ab7;
+  color: #fff;
+}
+
+.menu li.current a {
+  background: #337ab7;
+  color: #fff;
+}
+
+.menu li a.active {
+  background: #337ab7;
+  color: #fff;
+}
+
+.menu li a.active:after {
+  position: absolute;
+  left: 5em;
+  top: 0;
+  content: "";
+  border: 2.5em solid transparent;
+  border-left-color: #337ab7;
+  border-width: 2.5em 1em
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li:after {
+  content: attr(title);
+  position: absolute;
+  left: 5em;
+  top: 0;
+  height: 5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background: #337ab7;
+  padding: 2em;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu li:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+@@media screen and (max-height: 34em) {
+  .menu li {
+    font-size: 70%;
+  }
+}
+</style>*@
+
+
+

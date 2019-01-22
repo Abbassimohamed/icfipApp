@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ICFIP.Entites.BTP>
+
+@{
+    ViewBag.Title = "GereBtp";
+}
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+
+    .modal-body {
+        max-height: calc(85vh - 210px);
+        overflow-y: auto;
+    }
+
+   
+</style>
+
+
+<div style="margin-top:5%" class="row">
+    <div style="margin-left:37%">
+
+        <h2>Liste des Formations Btp</h2>
+    </div>
+    <div style="margin-left:34%">
+        <p class="btn btn-info">
+            @Html.ActionLink("retourner ", "Index")
+        </p>
+        <p class="btn btn-info">
+            @Html.ActionLink("Ajouter BTP", "ajouterBtp")
+        </p>
+    </div>
+</div>
+<div class="col-md-7 col-md-offset-3 modal-body ">
+    <table class="table table-responsive">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.IdBtp)*@
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Libelle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nbrannee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdNiveau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Homolgue)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(modelItem => item.IdBtp)
+                </td>
+          
+                <td>
+                    @Html.DisplayFor(modelItem => item.Libelle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nbrannee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdNiveau)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Homolgue)
+                </td>
+                <td>
+                    <h1 class="btn btn-info">
+                        @Html.ActionLink("Modifier", "EditBtp", new { id = item.IdBtp }) 
+                    </h1>|
+                    <h1 class="btn btn-info">
+
+                        @Html.ActionLink("Details", "DetailsBtp", new { id = item.IdBtp })
+                    </h1> |
+
+                    <h1 class="btn btn-info">
+                        @Html.ActionLink("Supprimer", "DeleteBtp", new { id = item.IdBtp })
+                    </h1>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

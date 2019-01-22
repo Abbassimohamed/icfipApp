@@ -1,0 +1,899 @@
+2016-05-01 00:00:18,121 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:00:18,159 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:01:49,851 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:01:49,851 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:01:57,868 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:02:11,014 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:02:11,131 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:02:11,131 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:02:13,883 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:13,885 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:22,178 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:23,080 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:27,824 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:27,825 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:29,008 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:29,287 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:31,003 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:31,004 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:32,385 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:32,456 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:34,753 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:34,753 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:35,872 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:35,883 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:37,358 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:37,358 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:38,727 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:38,771 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:39,881 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:02:39,882 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:02:41,106 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:02:41,789 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:02:44,498 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:44,498 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:45,917 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:45,981 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:47,251 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:47,251 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:48,648 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:48,669 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:50,061 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:50,061 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:51,410 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:51,479 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:52,855 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:52,855 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:53,838 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:02:53,895 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:02:55,416 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:55,416 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:02:56,782 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:56,824 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:02:58,504 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:58,505 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:02:59,527 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:02:59,532 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:03:00,881 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:00,881 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:02,337 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:02,381 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:04,476 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:04,476 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:05,497 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 00:03:05,646 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 00:03:07,808 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:07,808 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:09,240 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:09,276 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:10,790 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:10,790 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:12,294 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:12,308 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:14,564 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:14,564 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:16,168 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:16,232 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:17,416 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:17,416 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:18,431 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:18,446 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:21,282 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:21,282 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:26,956 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:27,009 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:03:28,520 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:28,520 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:03:29,710 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:29,725 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:03:47,779 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:03:47,779 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:04:06,023 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GereSpecialite method
+2016-05-01 00:04:06,104 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GereSpecialite method
+2016-05-01 00:04:09,817 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GereFormation method
+2016-05-01 00:04:09,890 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GereFormation method
+2016-05-01 00:04:34,936 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:04:34,937 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:05:19,592 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:05:19,642 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:12:02,550 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:12:03,689 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:12:30,054 DEBUG Account - Entered ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 00:12:30,055 DEBUG Account - Existing ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 00:12:30,080 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:12:30,080 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:12:31,925 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:12:32,406 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:12:48,896 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:12:51,249 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:12:51,254 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:12:51,254 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:40:09,147 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:40:10,893 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:45:48,434 DEBUG Account - Entered ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 00:45:48,436 DEBUG Account - Existing ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 00:45:48,445 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:45:48,445 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:45:50,131 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:45:50,179 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:45:54,836 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:45:55,020 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 00:45:55,025 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:45:55,025 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 00:45:56,153 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:45:56,154 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:45:58,695 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:45:58,853 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:00,305 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:00,307 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:02,112 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:02,224 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:04,727 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:04,728 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:05,876 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:05,902 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:06,983 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:06,983 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:07,988 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:46:08,003 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:46:09,335 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:09,335 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:10,678 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:10,705 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:12,040 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:12,040 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:13,044 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:13,054 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:14,596 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:14,596 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:15,878 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:15,921 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:17,388 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:17,388 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:18,220 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:46:18,225 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote1 method
+2016-05-01 00:46:19,495 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:19,495 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:20,708 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:20,750 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:22,400 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:22,400 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's lienn method
+2016-05-01 00:46:23,262 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:23,274 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierNote method
+2016-05-01 00:46:24,528 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:24,528 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:25,821 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:25,850 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:27,525 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:46:27,526 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:46:28,499 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:46:28,621 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence method
+2016-05-01 00:46:30,879 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:30,880 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:32,348 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:32,391 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:33,984 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:46:33,984 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 00:46:34,796 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 00:46:34,907 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 00:46:37,223 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:37,224 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:46:43,897 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:46:43,941 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 00:53:56,955 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:53:56,955 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:59:28,631 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:59:28,631 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:59:35,792 ERROR administrateur - c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\administrateur\Index.cshtml(82): error CS0103: The name 'media' does not exist in the current context
+System.Web.HttpCompileException (0x80004005): c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\administrateur\Index.cshtml(82): error CS0103: The name 'media' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   at System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   at System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   at System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 00:59:48,113 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 00:59:48,113 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:04,263 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:04,263 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:05,557 DEBUG Home - Entered ICFIP.Controllers.HomeController's Contact method
+2016-05-01 01:05:05,657 DEBUG Home - Existing ICFIP.Controllers.HomeController's Contact method
+2016-05-01 01:05:08,825 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:08,826 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:09,890 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:09,890 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:10,625 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:05:10,625 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:07:59,421 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:07:59,421 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:09:01,051 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:09:01,052 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:10:41,308 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:10:41,309 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:11:05,174 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:11:05,174 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:12:44,601 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:12:44,601 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:13:05,225 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:13:05,225 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:13:44,244 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:13:44,245 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:14:07,441 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:14:07,441 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:16:40,049 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:16:40,049 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:01,534 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:01,534 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:24,717 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:24,718 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:59,564 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:17:59,564 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:18:43,723 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:18:43,742 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:19:45,823 ERROR administrateur - Unable to connect to SQL Server database.
+System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+   at System.Web.Management.SqlServices.SetupApplicationServices(String server, String user, String password, Boolean trusted, String connectionString, String database, String dbFileName, SqlFeatures features, Boolean install)
+   at System.Web.Management.SqlServices.Install(String database, String dbFileName, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.EnsureDBFile(String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.GetConnection(String connectionString, Boolean revertImpersonation)
+   at System.Web.Security.SqlRoleProvider.GetRolesForUser(String username)
+   at WebMatrix.WebData.SimpleRoleProvider.GetRolesForUser(String username)
+   at System.Web.Security.RolePrincipal.IsInRole(String role)
+   at ASP._Page_Views_Shared__Layout_cshtml.Execute() in c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\Shared\_Layout.cshtml:line 134
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 01:19:55,441 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 01:19:55,873 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 01:19:55,874 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's liennabs method
+2016-05-01 01:19:57,597 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's ModifierAbsence1 method
+2016-05-01 01:20:00,181 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:20:00,303 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:20:00,556 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:20:00,556 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:20:08,189 DEBUG Account - Entered ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 01:20:08,194 DEBUG Account - Existing ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 01:20:08,213 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:20:08,213 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:25:17,331 ERROR administrateur - Unable to connect to SQL Server database.
+System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+   at System.Web.Management.SqlServices.SetupApplicationServices(String server, String user, String password, Boolean trusted, String connectionString, String database, String dbFileName, SqlFeatures features, Boolean install)
+   at System.Web.Management.SqlServices.Install(String database, String dbFileName, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.EnsureDBFile(String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.GetConnection(String connectionString, Boolean revertImpersonation)
+   at System.Web.Security.SqlRoleProvider.GetRolesForUser(String username)
+   at WebMatrix.WebData.SimpleRoleProvider.GetRolesForUser(String username)
+   at System.Web.Security.RolePrincipal.IsInRole(String role)
+   at ASP._Page_Views_Shared__Layout_cshtml.Execute() in c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\Shared\_Layout.cshtml:line 134
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 01:25:20,810 ERROR administrateur - Unable to connect to SQL Server database.
+System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+   at System.Web.Management.SqlServices.SetupApplicationServices(String server, String user, String password, Boolean trusted, String connectionString, String database, String dbFileName, SqlFeatures features, Boolean install)
+   at System.Web.Management.SqlServices.Install(String database, String dbFileName, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.EnsureDBFile(String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.GetConnection(String connectionString, Boolean revertImpersonation)
+   at System.Web.Security.SqlRoleProvider.GetRolesForUser(String username)
+   at WebMatrix.WebData.SimpleRoleProvider.GetRolesForUser(String username)
+   at System.Web.Security.RolePrincipal.IsInRole(String role)
+   at ASP._Page_Views_Shared__Layout_cshtml.Execute() in c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\Shared\_Layout.cshtml:line 134
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 01:25:28,277 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:25:28,330 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:25:41,460 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:25:41,728 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:25:41,733 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:25:41,733 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:25:57,177 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:25:57,177 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:26:20,273 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:26:20,273 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:26:34,189 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:26:34,189 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:27:28,759 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:27:28,760 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:27:43,330 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:27:43,330 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:28:01,007 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:28:01,008 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:28:43,811 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:28:43,811 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:29:08,749 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:29:08,749 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:29:28,375 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:29:28,375 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:31:06,428 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:31:06,429 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:31:52,182 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:31:52,182 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:32:15,378 DEBUG Home - Entered ICFIP.Controllers.HomeController's About method
+2016-05-01 01:32:15,464 DEBUG Home - Existing ICFIP.Controllers.HomeController's About method
+2016-05-01 01:33:30,581 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:33:30,581 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:34:53,779 DEBUG Home - Entered ICFIP.Controllers.HomeController's About method
+2016-05-01 01:34:53,780 DEBUG Home - Existing ICFIP.Controllers.HomeController's About method
+2016-05-01 01:35:30,483 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:35:30,483 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:36:32,630 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:36:32,631 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:37:10,810 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:37:10,810 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:37:41,332 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:37:41,332 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:38:22,860 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:38:22,870 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:39:18,018 ERROR administrateur - Unable to connect to SQL Server database.
+System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+   at System.Web.Management.SqlServices.SetupApplicationServices(String server, String user, String password, Boolean trusted, String connectionString, String database, String dbFileName, SqlFeatures features, Boolean install)
+   at System.Web.Management.SqlServices.Install(String database, String dbFileName, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.EnsureDBFile(String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.GetConnection(String connectionString, Boolean revertImpersonation)
+   at System.Web.Security.SqlRoleProvider.GetRolesForUser(String username)
+   at WebMatrix.WebData.SimpleRoleProvider.GetRolesForUser(String username)
+   at System.Web.Security.RolePrincipal.IsInRole(String role)
+   at ASP._Page_Views_Shared__Layout_cshtml.Execute() in c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\Shared\_Layout.cshtml:line 134
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 01:39:24,691 DEBUG Account - Entered ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 01:39:25,398 DEBUG Account - Existing ICFIP.Controllers.AccountController's LogOff method
+2016-05-01 01:39:25,411 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:39:25,411 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:39:27,149 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:39:27,211 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:39:32,603 DEBUG Account - Entered ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:39:34,452 DEBUG Account - Existing ICFIP.Controllers.AccountController's Login method
+2016-05-01 01:39:34,458 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:39:34,458 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:39:41,702 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:39:41,702 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:40:16,285 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:40:16,286 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:41:39,358 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:41:39,358 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:22,418 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:22,418 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:40,913 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:40,913 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:59,651 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:42:59,651 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:43:54,975 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:43:54,975 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:44:22,851 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:44:22,851 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:44:42,899 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:44:42,899 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:45:18,203 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 01:45:18,563 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's GetListEtudiant method
+2016-05-01 01:49:00,035 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:49:00,035 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:49:17,011 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:49:17,011 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:49:18,537 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:49:18,537 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:50:28,316 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:50:28,317 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:51:06,422 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:51:06,423 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:52:55,984 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:52:55,984 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:53:14,740 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:53:14,740 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:53:38,662 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:53:38,662 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:54:25,313 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:54:25,333 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:55:21,347 ERROR administrateur - Unable to connect to SQL Server database.
+System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Web.HttpException (0x80004005): Unable to connect to SQL Server database. ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+   at System.Web.Management.SqlServices.GetSqlConnection(String server, String user, String password, Boolean trusted, String connectionString)
+   at System.Web.Management.SqlServices.SetupApplicationServices(String server, String user, String password, Boolean trusted, String connectionString, String database, String dbFileName, SqlFeatures features, Boolean install)
+   at System.Web.Management.SqlServices.Install(String database, String dbFileName, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.CreateMdfFile(String fullFileName, String dataDir, String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.EnsureDBFile(String connectionString)
+   at System.Web.DataAccess.SqlConnectionHelper.GetConnection(String connectionString, Boolean revertImpersonation)
+   at System.Web.Security.SqlRoleProvider.GetRolesForUser(String username)
+   at WebMatrix.WebData.SimpleRoleProvider.GetRolesForUser(String username)
+   at System.Web.Security.RolePrincipal.IsInRole(String role)
+   at ASP._Page_Views_Shared__Layout_cshtml.Execute() in c:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP\Views\Shared\_Layout.cshtml:line 134
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 01:55:29,925 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:55:30,772 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 01:55:33,269 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 01:55:33,269 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:18:42,554 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:18:42,554 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:19:09,978 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:19:09,978 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:19:44,725 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:19:44,725 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:20:04,807 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:20:04,808 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:22:09,364 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:22:09,364 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:22:25,969 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:22:25,969 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:35:44,846 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:35:44,846 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:42:27,630 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:42:27,630 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 02:42:37,297 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:42:37,297 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:45:10,264 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:45:10,264 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:45:20,162 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:45:20,162 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:00,726 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:00,727 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:07,531 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:07,531 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:11,336 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:46:11,336 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:48:36,151 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:48:36,151 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:48:54,732 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:48:54,732 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:51:59,697 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:51:59,697 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:53:20,020 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:53:20,021 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:56:04,858 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:56:04,858 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:56:14,538 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:56:14,538 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:58:50,276 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:58:50,277 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:59:41,173 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:59:41,173 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:59:43,538 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 02:59:43,538 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:11,124 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:11,124 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:27,892 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:27,892 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:40,280 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:01:40,280 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:04:03,431 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:04:03,431 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:19,807 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:19,807 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:38,394 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:38,394 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:46,432 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:05:46,433 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:06,093 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:06,094 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:13,997 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:13,997 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:47,044 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:47,045 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:52,572 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:06:52,572 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:07:25,413 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:07:25,413 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:12:59,811 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:12:59,812 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:13:43,606 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:13:43,607 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:14:22,098 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:14:22,098 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:16:34,132 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:16:34,133 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:17:24,033 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:17:24,033 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:17:40,835 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:17:40,835 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:18:32,294 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:18:33,125 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:19:36,918 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:19:36,918 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:20:34,616 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:20:34,617 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:21:20,932 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:21:20,933 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:21:29,996 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:21:29,996 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:24:28,136 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:24:28,136 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:25:22,486 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:25:22,486 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:29:07,560 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:29:07,560 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:29:55,991 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:29:55,991 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:30:23,868 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:30:23,869 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:13,422 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:13,422 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:35,939 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:35,939 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:42,989 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:42,989 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:47,837 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:31:47,838 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:32:29,491 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:32:29,492 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:33:20,155 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:33:20,155 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:39:50,296 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:39:50,297 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:40:34,536 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:40:34,536 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:41:56,956 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:41:56,956 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:42:26,726 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:42:27,661 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:44:46,682 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:44:46,682 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:45:44,103 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:45:44,104 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:46:03,615 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:46:03,615 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:46:51,161 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:46:51,161 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:08,791 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:08,791 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:24,147 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:24,147 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:35,762 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:35,762 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:51,714 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:47:51,714 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:07,892 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:07,892 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:30,204 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:30,204 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:40,910 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:48:40,910 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:50:51,209 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:50:51,210 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:51:22,572 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:51:22,572 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:52:09,289 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:52:09,289 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:52:53,865 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:52:53,865 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:53:06,263 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:53:06,263 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:54:54,279 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:54:54,414 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:54:55,083 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:54:55,083 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:55:13,528 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:55:13,528 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:56:57,270 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:56:57,271 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:29,384 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:29,384 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:34,855 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:34,855 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:37,321 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:37,321 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:42,865 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:57:42,866 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:59:04,313 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 03:59:04,314 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:01:04,680 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:01:04,680 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:02:00,003 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:02:00,003 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:02:53,294 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:02:53,294 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:03:42,247 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:03:42,248 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:05:04,425 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:05:04,425 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:06:32,582 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:06:32,582 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:06:48,755 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:06:48,755 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:07:09,485 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:07:09,485 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:07:35,323 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:07:35,324 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:08:00,793 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:08:00,794 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:08:56,507 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:08:56,507 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:09:05,241 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:09:05,241 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:08,935 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:08,935 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:18,564 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:18,564 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:23,300 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:23,300 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:28,764 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:28,764 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:46,017 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:46,017 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:54,682 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:10:54,682 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:11:07,735 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:11:07,735 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:11:51,721 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:11:52,526 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:27,266 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:27,266 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:34,249 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:34,249 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:48,136 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:12:48,136 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:13:27,433 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:13:27,433 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:13:56,906 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:13:56,906 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:16:36,551 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:16:36,551 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:16:38,682 ERROR Home - "-" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+System.Web.HttpParseException (0x80004005): "-" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   at System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   at System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   at System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-05-01 04:17:44,061 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:17:44,061 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:17:49,702 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:17:49,703 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:19:45,399 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:19:45,400 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:20:36,491 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:20:36,491 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:25:07,866 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:25:07,866 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:25:18,319 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:25:18,319 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:26:12,819 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:26:12,820 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:26:38,792 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:26:38,792 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:28:24,964 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:28:24,965 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:03,829 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:03,829 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:36,765 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:36,765 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:49,430 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:34:49,430 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:39:34,930 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 04:39:36,525 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 11:39:41,656 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 11:39:45,761 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method
+2016-05-01 11:40:39,495 DEBUG administrateur - Entered ICFIP.Controllers.administrateurController's Index method
+2016-05-01 11:40:39,497 DEBUG administrateur - Existing ICFIP.Controllers.administrateurController's Index method
+2016-05-01 11:40:45,039 DEBUG Home - Entered ICFIP.Controllers.HomeController's Index method
+2016-05-01 11:40:45,039 DEBUG Home - Existing ICFIP.Controllers.HomeController's Index method

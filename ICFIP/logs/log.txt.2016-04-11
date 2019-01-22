@@ -1,0 +1,12 @@
+2016-04-11 23:33:05,453 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:33:10,312 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:33:51,491 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:34:01,255 INFO ICFIP.Controllers.HomeController -  creation d'un etudiant avec sucess: 
+2016-04-11 23:35:38,444 INFO ICFIP.Controllers.HomeController -  creation d'un etudiant avec sucess: 
+2016-04-11 23:39:31,579 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:39:43,078 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:39:53,203 INFO ICFIP.Controllers.HomeController - Action Index has been fired.
+2016-04-11 23:40:01,690 INFO ICFIP.Controllers.HomeController -  creation d'un etudiant avec sucess: 
+2016-04-11 23:47:10,251 INFO ICFIP.Controllers.HomeController -  creation d'un etudiant avec sucess: 
+2016-04-11 23:48:52,470 INFO ICFIP.Controllers.HomeController - erreur create etudiant: The username is already in use.
+2016-04-11 23:48:52,481 INFO ICFIP.Controllers.HomeController -  creation d'un etudiant avec sucess: 

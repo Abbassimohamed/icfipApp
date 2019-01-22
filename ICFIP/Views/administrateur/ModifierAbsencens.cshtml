@@ -1,0 +1,90 @@
+﻿@model IEnumerable<ICFIP.Entites.VtPEnsig>
+
+@{
+    ViewBag.Title = "ModifierAbsencens";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 class="text-primary col-md-4 col-md-offset-4"> Modifier Absencens</h2>
+
+
+<table class="table ">
+    <tr class="btn-primary">
+        <th>
+           Nombre d'absnece
+        </th>
+              
+       
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="info">
+            <td>
+                @Html.DisplayFor(modelItem => item.nbrabsence)
+            </td>
+   
+                @Html.HiddenFor(modelItem => item.IdCour)
+          
+           
+                @Html.HiddenFor(modelItem => item.Idenseignant)
+         
+        
+                @Html.HiddenFor(modelItem => item.nom)
+          
+        
+            @Html.HiddenFor(modelItem => item.prenom)
+                @Html.HiddenFor(modelItem => item.prenom)
+         
+        </tr>
+    }
+
+</table>
+<table>
+    <tr class="btn-primary">
+        <th>
+            Nombre d'absnece
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="info">
+            <td>
+                @Html.DisplayFor(modelItem => item.nbrabsence)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.prenom)
+            </td>
+
+            @Html.HiddenFor(modelItem => item.IdCour)
+
+
+            @Html.HiddenFor(modelItem => item.Idenseignant)
+
+
+            @Html.HiddenFor(modelItem => item.nom)
+
+
+            @Html.HiddenFor(modelItem => item.prenom)
+          
+
+        </tr>
+    }
+
+</table>
+
+<div class="btn btn-primary">
+    @Html.ActionLink("Retourner", "GetListEnseignant")
+</div>
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

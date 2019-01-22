@@ -1,0 +1,223 @@
+﻿@model IEnumerable<ICFIP.Entites.VueBultain>
+
+
+
+<style type="text/css" media="all">
+	@@import "nucss2.css";
+</style>
+
+
+<link rel="stylesheet"
+      type="text/css"
+      media="print" href="print.css" />
+
+    <div id="mydiv">
+        <table class="table table-condensed">
+            <tr>
+                <td>
+                    REPUBLIQUE TUNISIENNE<br>
+                    Ministère de la Formation<br>
+                    Professionnelle et de l’Emploi<br>
+
+                    INSTITUT CHERIF DE FORMATION ET<br>
+                    INTEGRATION PROFESSIONNELLE<br>
+                </td>
+
+                <td >
+                    <img style="margin-right:50px" src="http://orientation.estudiant.tn/upload/logos/1399473230_icfip.jpg" />
+                </td>
+                <td>
+                    Année  de formation<br>
+
+                    @DateTime.Now.Year - @DateTime.Now.AddYears(1).Year
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="margin-left:50%" >RELEVE DE NOTES</h2>
+
+
+
+                </td>
+                <td>
+                </td>
+                <td>
+                 
+                </td>
+
+            </tr>
+            <tr>
+
+
+                <td>  Nom et Prénom: <br>
+                    Né( le) :<br>
+                    N° CIN:<br>
+                    N° d'inscription:<br>                                
+                    Diplôme<br>
+                    Spécialité<br>
+                    Niveau d'études<br>
+                    
+                </td>
+                <td>
+                    @ViewData["nom"]/ @ViewData["prenom"] <br>
+                    @ViewData["date"]/@ViewData["lieu"]<br>
+                    @ViewData["cin"]<br>
+                    @ViewData["ninscription"]<br>
+                    @ViewData["forma"]<br>
+                    @ViewData["spec"]<br>
+                    @ViewData["niv"]<br>
+                </td>
+                <td></td>
+
+            </tr>
+            <tr >
+                <td>
+                    <table class="table ">
+
+
+                        <tr class="btn-primary ">
+                            <th>
+                                Modules
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Note1)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Note2)
+                            </th>
+                            <th>
+                                Examen
+                            </th>
+
+                            <th>
+                                Moyenne
+                            </th>
+                            <th>
+                                Observation
+                            </th>
+                        </tr>
+                        @{    decimal x = 0;
+
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr class="info">
+
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Libelle)
+
+
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Note1)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Note2)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Note3)
+                                </td>
+
+
+
+
+                                <td>
+
+                                    @((item.Note3 * 0.70) + (item.Note2 * 0.2) + (item.Note2 * 0.1) / 3)
+                                </td>
+                                <td>
+                              
+                                </td>
+
+
+                            </tr>
+
+
+                        }
+                    </table>
+
+                <td></td>
+                <td></td>
+                
+
+
+            </tr>
+            <tr>
+                <td>Moyenne :</td>
+                <td>Rang :</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Direction:</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                
+                <td>NB: Il n'est délivré qu'une seule copie du présent relevé</td>
+               
+            </tr>
+        </table>
+
+
+</div>
+
+
+
+    <input type="button" value="Imprimer" class="btn-info" onclick="PrintElem('#mydiv')" />
+
+
+
+
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js"> </script>
+    <script type="text/javascript">
+
+    function PrintElem(elem) {
+        Popup($(elem).html());
+    }
+
+    function Popup(data) {
+
+        var mywindow = window.open('', 'my div', 'height=400,width=600');
+        mywindow.document.write('<html><head><title></title>');
+        /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
+        mywindow.document.write('</head> <body >');
+       
+     
+        mywindow.document.write(data);
+
+        mywindow.document.write('</body></html>');
+
+        mywindow.document.close(); // necessary for IE >= 10
+
+        mywindow.focus(); // necessary for IE >= 10
+
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+    }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

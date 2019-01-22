@@ -1,0 +1,78 @@
+﻿@model ICFIP.Entites.Etudiants
+
+@{
+    ViewBag.Title = "AjouterNote";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-7 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>liste des notes </h2>
+            </div>
+
+      
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    <div class="panel-body">
+
+        <table class="table table-bordered">
+
+            <tr class="btn-primary">
+                <th>Nome </th>
+                <th>Prenom</th>
+                <th>Note 1 </th>
+                <th>Note 2 </th>
+                <th>Examen </th>
+
+
+
+            </tr>
+            @for (var i = 0; i < Model.ListeEtudiants.Count; i++)
+                        {
+
+            <tr class="info">
+                <td >@Html.DisplayFor(m => Model.ListeEtudiants[i].Nom)</td>
+                <td >@Html.DisplayFor(m => Model.ListeEtudiants[i].Prenom)</td>
+                <td>@Html.TextBoxFor(m => Model.ListeEtudiants[i].Note1)</td>
+                <td>@Html.TextBoxFor(m => Model.ListeEtudiants[i].Note2)</td>
+                <td>@Html.TextBoxFor(m => Model.ListeEtudiants[i].Examen)</td>
+                @Html.HiddenFor(m => Model.ListeEtudiants[i].Idetudiant)
+                @Html.HiddenFor(m => Model.ListeEtudiants[i].UserId)
+              @Html.HiddenFor(m => Model.ListeEtudiants[i].IdSpetialite)
+
+         
+
+            </tr>
+                        }
+        </table>
+        <p>
+            <input class="btn btn-primary" type="submit" value="Enregsitre " />
+        </p>
+        <div class="btn btn-primary">
+            @Html.ActionLink("Retourner", "Index")
+        </div>
+
+    </div>
+    }
+
+               
+        
+        </div>
+    </div>
+</div>
+
+                @section Scripts {
+                    @Scripts.Render("~/bundles/jqueryval")
+                }
+<style>
+    a {
+        color: white;
+    }
+</style>

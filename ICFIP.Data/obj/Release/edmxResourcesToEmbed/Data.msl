@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ICFIPModelStoreContainer" CdmEntityContainer="ICFIPEntities">
+    <FunctionImportMapping FunctionImportName="GetBultain" FunctionName="ICFIPModel.Store.GetBultain">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICFIPModel.GetBultainResult">
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdNote" ColumnName="IdNote" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Administrateur">
+      <EntityTypeMapping TypeName="ICFIPModel.Administrateur">
+        <MappingFragment StoreEntitySet="Administrateur">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Sexe" ColumnName="Sexe" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="IdAdministrateur" ColumnName="IdAdministrateur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BTP">
+      <EntityTypeMapping TypeName="ICFIPModel.BTP">
+        <MappingFragment StoreEntitySet="BTP">
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="Homolgue" ColumnName="Homolgue" />
+          <ScalarProperty Name="nbrannee" ColumnName="nbrannee" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdBtp" ColumnName="IdBtp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BTS">
+      <EntityTypeMapping TypeName="ICFIPModel.BTS">
+        <MappingFragment StoreEntitySet="BTS">
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="Homologue" ColumnName="Homologue" />
+          <ScalarProperty Name="nbdannee" ColumnName="nbdannee" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdBts" ColumnName="IdBts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calendrier">
+      <EntityTypeMapping TypeName="ICFIPModel.Calendrier">
+        <MappingFragment StoreEntitySet="Calendrier">
+          <ScalarProperty Name="Seconde" ColumnName="Seconde" />
+          <ScalarProperty Name="Minute" ColumnName="Minute" />
+          <ScalarProperty Name="Heur" ColumnName="Heur" />
+          <ScalarProperty Name="Jour" ColumnName="Jour" />
+          <ScalarProperty Name="Mois" ColumnName="Mois" />
+          <ScalarProperty Name="Anne" ColumnName="Anne" />
+          <ScalarProperty Name="IdCalendrier" ColumnName="IdCalendrier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAP">
+      <EntityTypeMapping TypeName="ICFIPModel.CAP">
+        <MappingFragment StoreEntitySet="CAP">
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="Homologue" ColumnName="Homologue" />
+          <ScalarProperty Name="nbrDanne" ColumnName="nbrDanne" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdCap" ColumnName="IdCap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cour">
+      <EntityTypeMapping TypeName="ICFIPModel.Cour">
+        <MappingFragment StoreEntitySet="Cour">
+          <ScalarProperty Name="IdSpecialite" ColumnName="IdSpecialite" />
+          <ScalarProperty Name="SeiulEliminer" ColumnName="SeiulEliminer" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emploie">
+      <EntityTypeMapping TypeName="ICFIPModel.Emploie">
+        <MappingFragment StoreEntitySet="Emploie">
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdSalle" ColumnName="IdSalle" />
+          <ScalarProperty Name="IdCalendrier" ColumnName="IdCalendrier" />
+          <ScalarProperty Name="NomEmploie" ColumnName="NomEmploie" />
+          <ScalarProperty Name="IdEmploie" ColumnName="IdEmploie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enseignant">
+      <EntityTypeMapping TypeName="ICFIPModel.Enseignant">
+        <MappingFragment StoreEntitySet="Enseignant">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="NCin" ColumnName="NCin" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Idenseignant" ColumnName="Idenseignant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etudiant">
+      <EntityTypeMapping TypeName="ICFIPModel.Etudiant">
+        <MappingFragment StoreEntitySet="Etudiant">
+          <ScalarProperty Name="nbinscription" ColumnName="nbinscription" />
+          <ScalarProperty Name="IdSpetialite" ColumnName="IdSpetialite" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="NCin" ColumnName="NCin" />
+          <ScalarProperty Name="LieDeNaissene" ColumnName="LieDeNaissene" />
+          <ScalarProperty Name="Matricule" ColumnName="Matricule" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdBts" ColumnName="IdBts" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="Sexe" ColumnName="Sexe" />
+          <ScalarProperty Name="DateNiassance" ColumnName="DateNiassance" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Formation">
+      <EntityTypeMapping TypeName="ICFIPModel.Formation">
+        <MappingFragment StoreEntitySet="Formation">
+          <ScalarProperty Name="DescriptionFormation" ColumnName="DescriptionFormation" />
+          <ScalarProperty Name="LibelleFormation" ColumnName="LibelleFormation" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mois">
+      <EntityTypeMapping TypeName="ICFIPModel.mois">
+        <MappingFragment StoreEntitySet="mois">
+          <ScalarProperty Name="Libillemois" ColumnName="Libillemois" />
+          <ScalarProperty Name="Idmois" ColumnName="Idmois" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Niveau">
+      <EntityTypeMapping TypeName="ICFIPModel.Niveau">
+        <MappingFragment StoreEntitySet="Niveau">
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NiveauFormation">
+      <EntityTypeMapping TypeName="ICFIPModel.NiveauFormation">
+        <MappingFragment StoreEntitySet="NiveauFormation">
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="IdNiveauFormation" ColumnName="IdNiveauFormation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Note">
+      <EntityTypeMapping TypeName="ICFIPModel.Note">
+        <MappingFragment StoreEntitySet="Note">
+          <ScalarProperty Name="IdSpetialite" ColumnName="IdSpetialite" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+          <ScalarProperty Name="HeurNote" ColumnName="HeurNote" />
+          <ScalarProperty Name="DateNote" ColumnName="DateNote" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="IdCap" ColumnName="IdCap" />
+          <ScalarProperty Name="IdBtp" ColumnName="IdBtp" />
+          <ScalarProperty Name="IdBts" ColumnName="IdBts" />
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="IdNote" ColumnName="IdNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presence">
+      <EntityTypeMapping TypeName="ICFIPModel.Presence">
+        <MappingFragment StoreEntitySet="Presence">
+          <ScalarProperty Name="IdSpetialite" ColumnName="IdSpetialite" />
+          <ScalarProperty Name="nbdabsence" ColumnName="nbdabsence" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="IdCap" ColumnName="IdCap" />
+          <ScalarProperty Name="IdBtp" ColumnName="IdBtp" />
+          <ScalarProperty Name="IdBts" ColumnName="IdBts" />
+          <ScalarProperty Name="HeurAbsence" ColumnName="HeurAbsence" />
+          <ScalarProperty Name="DateAbsnece" ColumnName="DateAbsnece" />
+          <ScalarProperty Name="Absence" ColumnName="Absence" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdAbsence" ColumnName="IdAbsence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PresenceEnse">
+      <EntityTypeMapping TypeName="ICFIPModel.PresenceEnse">
+        <MappingFragment StoreEntitySet="PresenceEnse">
+          <ScalarProperty Name="Idmois" ColumnName="Idmois" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="HeurAbsence" ColumnName="HeurAbsence" />
+          <ScalarProperty Name="DateAbsnece" ColumnName="DateAbsnece" />
+          <ScalarProperty Name="nbdabsence" ColumnName="nbdabsence" />
+          <ScalarProperty Name="Idenseignant" ColumnName="Idenseignant" />
+          <ScalarProperty Name="absence" ColumnName="absence" />
+          <ScalarProperty Name="IdPresence" ColumnName="IdPresence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salle">
+      <EntityTypeMapping TypeName="ICFIPModel.Salle">
+        <MappingFragment StoreEntitySet="Salle">
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdAdministrateur" ColumnName="IdAdministrateur" />
+          <ScalarProperty Name="IdSalle" ColumnName="IdSalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Semestre">
+      <EntityTypeMapping TypeName="ICFIPModel.Semestre">
+        <MappingFragment StoreEntitySet="Semestre">
+          <ScalarProperty Name="LibelleSemestre" ColumnName="LibelleSemestre" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sendmail">
+      <EntityTypeMapping TypeName="ICFIPModel.Sendmail">
+        <MappingFragment StoreEntitySet="Sendmail">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdSendMail" ColumnName="IdSendMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialite">
+      <EntityTypeMapping TypeName="ICFIPModel.Specialite">
+        <MappingFragment StoreEntitySet="Specialite">
+          <ScalarProperty Name="IdSpetialite" ColumnName="IdSpetialite" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="IdSpecialiteFormation" ColumnName="IdSpecialiteFormation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ICFIPModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tab_BTP">
+      <EntityTypeMapping TypeName="ICFIPModel.Tab_BTP">
+        <MappingFragment StoreEntitySet="Tab_BTP">
+          <ScalarProperty Name="IdAdministrateur" ColumnName="IdAdministrateur" />
+          <ScalarProperty Name="IdBtp" ColumnName="IdBtp" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdTabBtp" ColumnName="IdTabBtp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tab_BTS">
+      <EntityTypeMapping TypeName="ICFIPModel.Tab_BTS">
+        <MappingFragment StoreEntitySet="Tab_BTS">
+          <ScalarProperty Name="IdBts" ColumnName="IdBts" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdAdministrateur" ColumnName="IdAdministrateur" />
+          <ScalarProperty Name="IdTabBts" ColumnName="IdTabBts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tab_CAP">
+      <EntityTypeMapping TypeName="ICFIPModel.Tab_CAP">
+        <MappingFragment StoreEntitySet="Tab_CAP">
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="IdCap" ColumnName="IdCap" />
+          <ScalarProperty Name="IdAdministrateur" ColumnName="IdAdministrateur" />
+          <ScalarProperty Name="IdTabCAP" ColumnName="IdTabCAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeSexe">
+      <EntityTypeMapping TypeName="ICFIPModel.TypeSexe">
+        <MappingFragment StoreEntitySet="TypeSexe">
+          <ScalarProperty Name="LibelleType" ColumnName="LibelleType" />
+          <ScalarProperty Name="ID_Type" ColumnName="ID_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeSpecialite">
+      <EntityTypeMapping TypeName="ICFIPModel.TypeSpecialite">
+        <MappingFragment StoreEntitySet="TypeSpecialite">
+          <ScalarProperty Name="DescriptionSpetialite" ColumnName="DescriptionSpetialite" />
+          <ScalarProperty Name="LibelleSpecialite" ColumnName="LibelleSpecialite" />
+          <ScalarProperty Name="IdSpetialite" ColumnName="IdSpetialite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfile">
+      <EntityTypeMapping TypeName="ICFIPModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Membership">
+      <EntityTypeMapping TypeName="ICFIPModel.webpages_Membership">
+        <MappingFragment StoreEntitySet="webpages_Membership">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_OAuthMembership">
+      <EntityTypeMapping TypeName="ICFIPModel.webpages_OAuthMembership">
+        <MappingFragment StoreEntitySet="webpages_OAuthMembership">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderUserId" ColumnName="ProviderUserId" />
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Roles">
+      <EntityTypeMapping TypeName="ICFIPModel.webpages_Roles">
+        <MappingFragment StoreEntitySet="webpages_Roles">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_UsersInRoles">
+      <EntityTypeMapping TypeName="ICFIPModel.webpages_UsersInRoles">
+        <MappingFragment StoreEntitySet="webpages_UsersInRoles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BultainGenral">
+      <EntityTypeMapping TypeName="ICFIPModel.BultainGenral">
+        <MappingFragment StoreEntitySet="BultainGenral">
+          <ScalarProperty Name="nbdabsence" ColumnName="nbdabsence" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="IdNote" ColumnName="IdNote" />
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calendr">
+      <EntityTypeMapping TypeName="ICFIPModel.calendr">
+        <MappingFragment StoreEntitySet="calendr">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdSalle" ColumnName="IdSalle" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="NomEmploie" ColumnName="NomEmploie" />
+          <ScalarProperty Name="IdEmploie" ColumnName="IdEmploie" />
+          <ScalarProperty Name="Seconde" ColumnName="Seconde" />
+          <ScalarProperty Name="Minute" ColumnName="Minute" />
+          <ScalarProperty Name="Heur" ColumnName="Heur" />
+          <ScalarProperty Name="Jour" ColumnName="Jour" />
+          <ScalarProperty Name="Mois" ColumnName="Mois" />
+          <ScalarProperty Name="Anne" ColumnName="Anne" />
+          <ScalarProperty Name="IdCalendrier" ColumnName="IdCalendrier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VtPEnsig">
+      <EntityTypeMapping TypeName="ICFIPModel.VtPEnsig">
+        <MappingFragment StoreEntitySet="VtPEnsig">
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="Idenseignant" ColumnName="Idenseignant" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="nbrabsence" ColumnName="nbrabsence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VueAbsence">
+      <EntityTypeMapping TypeName="ICFIPModel.VueAbsence">
+        <MappingFragment StoreEntitySet="VueAbsence">
+          <ScalarProperty Name="Observation" ColumnName="Observation" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="LibelleCour" ColumnName="LibelleCour" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+          <ScalarProperty Name="NbAbsence" ColumnName="NbAbsence" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VueBultain">
+      <EntityTypeMapping TypeName="ICFIPModel.VueBultain">
+        <MappingFragment StoreEntitySet="VueBultain">
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdCour" ColumnName="IdCour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VueFormationNiveau">
+      <EntityTypeMapping TypeName="ICFIPModel.VueFormationNiveau">
+        <MappingFragment StoreEntitySet="VueFormationNiveau">
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IdNiveau" ColumnName="IdNiveau" />
+          <ScalarProperty Name="IdNiveauFormation" ColumnName="IdNiveauFormation" />
+          <ScalarProperty Name="DescriptionFormation" ColumnName="DescriptionFormation" />
+          <ScalarProperty Name="LibelleFormation" ColumnName="LibelleFormation" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VueNote">
+      <EntityTypeMapping TypeName="ICFIPModel.VueNote">
+        <MappingFragment StoreEntitySet="VueNote">
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="IdNote" ColumnName="IdNote" />
+          <ScalarProperty Name="Idetudiant" ColumnName="Idetudiant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

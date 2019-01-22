@@ -1,0 +1,178 @@
+﻿@model ICFIP.Entites.Etudiant
+
+@{
+    ViewBag.Title = "editEtudiant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Modifier Etudiant</h2>
+            </div>
+
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel-group">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading"></div>
+                                    <div class="row">
+                                        <div class="col-md-6 col">
+                                            <div class="col-md-6 col">
+
+                                                <div class="editor-label">
+                                                    @*@Html.LabelFor(model => model.Idetudiant)*@
+                                                </div>
+                                                <div class="editor-field">
+                                                    @Html.HiddenFor(model => model.Idetudiant)
+                                                    @Html.ValidationMessageFor(model => model.Idetudiant)
+                                                </div>
+
+                                                <div class="editor-label">
+                                                    @Html.LabelFor(model => model.Nom)
+                                                </div>
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.Nom)
+                                                    @Html.ValidationMessageFor(model => model.Nom)
+                                                </div>
+
+                                                <div class="editor-label">
+                                                    @Html.LabelFor(model => model.Prenom)
+                                                </div>
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.Prenom)
+                                                    @Html.ValidationMessageFor(model => model.Prenom)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+
+                                                <div class="editor-label">
+                                                    @Html.LabelFor(model => model.Email)
+                                                </div>
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.Email)
+                                                    @Html.ValidationMessageFor(model => model.Email)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-group">
+                                <div class="panel panel-primary">
+
+                                    <div class="panel-heading"></div>
+                                    <div class="panel-body">
+                                        <div class="col-md-6">
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Date De Naissence") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.EditorFor(model => model.DateNiassance)
+                                                @Html.ValidationMessageFor(model => model.DateNiassance)
+                                            </div>
+
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Niveau") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.DropDownListFor(model => model.IdNiveau, null, "--Selectionnez Niveau--")
+                                                @Html.ValidationMessageFor(model => model.IdNiveau)
+                                            </div>
+
+
+                                        
+                                        </div>
+
+
+                                        <div class="col-md-6">
+
+
+
+
+                                            <div class="editor-label">
+                                                @Html.LabelFor(model => model.Matricule)
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.EditorFor(model => model.Matricule)
+                                                @Html.ValidationMessageFor(model => model.Matricule)
+                                            </div>
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Lieu De Naissence") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.EditorFor(model => model.LieDeNaissene)
+                                                @Html.ValidationMessageFor(model => model.LieDeNaissene)
+                                            </div>
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Numereau de Cin") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.EditorFor(model => model.NCin)
+                                                @Html.ValidationMessageFor(model => model.NCin)
+                                            </div>
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Specialité") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.DropDownListFor(model => model.IdSpetialite, null, "--Selectionnez Specialite--")
+                                                @Html.ValidationMessageFor(model => model.IdSpetialite)
+                                            </div>
+
+                                            <div class="editor-label">
+                                                <b> @Html.DisplayName("Niveau Formation") </b>:
+                                            </div>
+                                            <div class="editor-field">
+                                                @Html.DropDownListFor(model => model.IdFormation, null, "--Selectionnez Formation--")
+
+                                                @Html.ValidationMessageFor(model => model.IdFormation)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            <input type="submit" class="btn btn-primary" value="Enregistrer" />
+                        </p>
+                        <div class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "GetListEtudiant")
+                        </div>
+
+                    </div>
+
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+               
+
+                @section Scripts {
+                    @Scripts.Render("~/bundles/jqueryval")
+                }
+<style>
+    a {
+        color: white;
+    }
+</style>

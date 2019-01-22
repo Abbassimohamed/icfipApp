@@ -1,0 +1,71 @@
+﻿@model ICFIP.Entites.TypeSpecialite
+
+@{
+    ViewBag.Title = "DeleteSpecialite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Supprimer Branche</h2>
+
+                <h3>Vous etez sur?</h3>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="col-md-6 col-md-offset-3">
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.LibelleSpecialite)
+                        :
+                        @Html.DisplayFor(model => model.LibelleSpecialite)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.DescriptionSpetialite)
+                        :
+                        @Html.DisplayFor(model => model.DescriptionSpetialite)
+                    </div>
+
+                    <div class="display-label">
+                        @*@Html.DisplayNameFor(model => model.IdSpetialite)*@
+                    </div>
+                    <div class="display-field">
+                        @Html.HiddenFor(model => model.IdSpetialite)
+                    </div>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <p>
+                            <input type="submit" class="btn btn-primary" value="Supprimer" />
+
+                        </p>
+                        <p class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "Index")
+                        </p>
+                    }
+                </div>
+              
+            </div>
+
+
+
+
+          
+
+
+        </div>
+    </div>
+</div>
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

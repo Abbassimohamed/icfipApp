@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Espace Enseignant :Brevet de technicien supérieur";
+}
+
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+</style>
+
+
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script>
+
+
+
+
+    $(function () {
+        $("#btnAbs").click(function () {
+
+            var Idbt = document.getElementById("idb").options[document.getElementById('idb').selectedIndex].value;
+            var Idcobt = document.getElementById("idc").options[document.getElementById('idc').selectedIndex].value;
+            var Idnibt = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterAbsBTS")' + "?IdBTS=" + Idbt + "+&IdcOURbt=" + Idcobt + "&IdNivbt=" + Idnibt
+            $(this).attr("href", path);
+
+        });
+
+
+    });
+
+
+
+    $(function () {
+        $("#btnNote").click(function () {
+
+            var Idbt = document.getElementById("idb").options[document.getElementById('idb').selectedIndex].value;
+            var Idco = document.getElementById("idc").options[document.getElementById('idc').selectedIndex].value;
+            var Idni = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterNotebts")' + "?IdBTS=" + Idbt + "+&IdcOURbt=" + Idco + "&IdNivbt=" + Idni
+            $(this).attr("href", path);
+
+        });
+
+
+    });
+
+
+</script>
+
+
+<!-- Large modal -->
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @*<fieldset>*@
+
+        <hgroup class="title">
+            <h1 class="alert alert-info col-md-8 col-md-offset-3" role="alert" style="color:#31b0d5 ;margin-top:-1px   ;font-family: 'Lobster', cursive; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">@ViewBag.Title</h1>
+        </hgroup>
+
+  
+        <div class="row">
+            <div class="col-md-4 " style="animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".200s" data-waw-duration="1s">
+
+                <div style="margin-top:20%" class="col-md-6 col-md-offset-12">
+                    <div style="width:200%;">
+                        @Html.DropDownList("GroupIdbts", null, "Selectionnez BTS ", new { @class = "form-control btn-info", id = "idb" })
+                    </div>
+                    <div style="width:200%; margin-top:5%;">
+                        @Html.DropDownList("GroupIdcour", null, "Selectionnez Cours", new { @class = "form-control btn-info", id = "idc" })
+                    </div>
+                    <div style="width:200%; margin-top:5%;">
+                        @Html.DropDownList("Radiobtn", null, "Select  Years", new { @class = "form-control btn-info", id = "niv" })
+
+                    </div>
+
+                    <div class="btn  alert-info btn-lg btn-block" style=" margin-left:10%; margin-top:5%;">
+
+                        @Html.ActionLink("Absence", "AjouterAbsBTS", "Enseignant", null, new { @id = "btnAbs" })
+                    </div>
+                    <div class="btn  alert-info btn-lg btn-block" style="margin-left:10%; margin-top:5%;">
+                        @Html.ActionLink("Note", "AjouterNotebts", "Enseignant", null, new { @id = "btnNote" })
+
+                    </div>
+                    <div class="btn  alert-info btn-lg btn-block" style="margin-left:10%; margin-top:5%;">
+                        @Html.ActionLink("Retourtner", "Index")
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    @*</fieldset>*@
+
+
+}
+
+
+
+

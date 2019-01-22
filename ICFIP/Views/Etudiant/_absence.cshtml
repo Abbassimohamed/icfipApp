@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ICFIP.Entites.VueAbsence>
+
+
+<table class="table table-condensed">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Idetudiant)*@
+        </th>
+
+        <th>
+            @*@Html.DisplayNameFor(model => model.IdCour)*@
+        </th>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.LibelleCour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NbAbsence)
+        </th>
+        <th>
+            Observation
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="info">
+            <td>
+                @Html.HiddenFor(modelItem => item.Idetudiant)
+            </td>
+
+
+            <td>
+                @Html.HiddenFor(modelItem => item.IdCour)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.LibelleCour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbAbsence)
+            </td>
+              <td>
+
+
+                  @if (item.Observation == "Eleminer")
+                  {
+                    <span style="color:#31708f" class="glyphicon glyphicon-remove"></span>
+                    
+                  }
+                  
+                  @if (item.Observation == "Non Eleminer")
+                  {
+                    <span style="color:#31708f" class="glyphicon glyphicon-ok"></span>
+                  }
+                  
+                  
+
+                      
+
+                                
+
+
+
+
+            </td>
+          
+        </tr>
+    }
+
+</table>

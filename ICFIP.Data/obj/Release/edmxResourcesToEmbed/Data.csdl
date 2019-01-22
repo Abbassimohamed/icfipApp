@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ICFIPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ICFIPEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetBultain" ReturnType="Collection(ICFIPModel.GetBultainResult)" />
+    <EntitySet Name="Administrateur" EntityType="ICFIPModel.Administrateur" />
+    <EntitySet Name="BTP" EntityType="ICFIPModel.BTP" />
+    <EntitySet Name="BTS" EntityType="ICFIPModel.BTS" />
+    <EntitySet Name="Calendrier" EntityType="ICFIPModel.Calendrier" />
+    <EntitySet Name="CAP" EntityType="ICFIPModel.CAP" />
+    <EntitySet Name="Cour" EntityType="ICFIPModel.Cour" />
+    <EntitySet Name="Emploie" EntityType="ICFIPModel.Emploie" />
+    <EntitySet Name="Enseignant" EntityType="ICFIPModel.Enseignant" />
+    <EntitySet Name="Etudiant" EntityType="ICFIPModel.Etudiant" />
+    <EntitySet Name="Formation" EntityType="ICFIPModel.Formation" />
+    <EntitySet Name="mois" EntityType="ICFIPModel.mois" />
+    <EntitySet Name="Niveau" EntityType="ICFIPModel.Niveau" />
+    <EntitySet Name="NiveauFormation" EntityType="ICFIPModel.NiveauFormation" />
+    <EntitySet Name="Note" EntityType="ICFIPModel.Note" />
+    <EntitySet Name="Presence" EntityType="ICFIPModel.Presence" />
+    <EntitySet Name="PresenceEnse" EntityType="ICFIPModel.PresenceEnse" />
+    <EntitySet Name="Salle" EntityType="ICFIPModel.Salle" />
+    <EntitySet Name="Semestre" EntityType="ICFIPModel.Semestre" />
+    <EntitySet Name="Sendmail" EntityType="ICFIPModel.Sendmail" />
+    <EntitySet Name="Specialite" EntityType="ICFIPModel.Specialite" />
+    <EntitySet Name="sysdiagrams" EntityType="ICFIPModel.sysdiagrams" />
+    <EntitySet Name="Tab_BTP" EntityType="ICFIPModel.Tab_BTP" />
+    <EntitySet Name="Tab_BTS" EntityType="ICFIPModel.Tab_BTS" />
+    <EntitySet Name="Tab_CAP" EntityType="ICFIPModel.Tab_CAP" />
+    <EntitySet Name="TypeSexe" EntityType="ICFIPModel.TypeSexe" />
+    <EntitySet Name="TypeSpecialite" EntityType="ICFIPModel.TypeSpecialite" />
+    <EntitySet Name="UserProfile" EntityType="ICFIPModel.UserProfile" />
+    <EntitySet Name="webpages_Membership" EntityType="ICFIPModel.webpages_Membership" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="ICFIPModel.webpages_OAuthMembership" />
+    <EntitySet Name="webpages_Roles" EntityType="ICFIPModel.webpages_Roles" />
+    <EntitySet Name="webpages_UsersInRoles" EntityType="ICFIPModel.webpages_UsersInRoles" />
+    <EntitySet Name="BultainGenral" EntityType="ICFIPModel.BultainGenral" />
+    <EntitySet Name="calendr" EntityType="ICFIPModel.calendr" />
+    <EntitySet Name="VtPEnsig" EntityType="ICFIPModel.VtPEnsig" />
+    <EntitySet Name="VueAbsence" EntityType="ICFIPModel.VueAbsence" />
+    <EntitySet Name="VueBultain" EntityType="ICFIPModel.VueBultain" />
+    <EntitySet Name="VueFormationNiveau" EntityType="ICFIPModel.VueFormationNiveau" />
+    <EntitySet Name="VueNote" EntityType="ICFIPModel.VueNote" />
+  </EntityContainer>
+  <ComplexType Name="GetBultainResult">
+    <Property Type="Int32" Name="IdCour" Nullable="true" />
+    <Property Type="String" Name="Libelle" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="IdNote" Nullable="true" />
+    <Property Type="Double" Name="Note1" Nullable="true" />
+    <Property Type="Int32" Name="Idetudiant" Nullable="true" />
+    <Property Type="Double" Name="Note2" Nullable="true" />
+    <Property Type="Double" Name="Note3" Nullable="true" />
+    <Property Type="String" Name="Nom" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prenom" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="Administrateur">
+    <Key>
+      <PropertyRef Name="IdAdministrateur" />
+    </Key>
+    <Property Name="IdAdministrateur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateNaissance" Type="DateTime" Precision="3" />
+    <Property Name="Sexe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="BTP">
+    <Key>
+      <PropertyRef Name="IdBtp" />
+    </Key>
+    <Property Name="IdBtp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nbrannee" Type="Int32" />
+    <Property Name="Homolgue" Type="Int32" />
+    <Property Name="IdNiveau" Type="Int32" />
+  </EntityType>
+  <EntityType Name="BTS">
+    <Key>
+      <PropertyRef Name="IdBts" />
+    </Key>
+    <Property Name="IdBts" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nbdannee" Type="Int32" />
+    <Property Name="Homologue" Type="Int32" />
+    <Property Name="IdNiveau" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Calendrier">
+    <Key>
+      <PropertyRef Name="IdCalendrier" />
+    </Key>
+    <Property Name="IdCalendrier" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Anne" Type="Int32" />
+    <Property Name="Mois" Type="Int32" />
+    <Property Name="Jour" Type="Int32" />
+    <Property Name="Heur" Type="Int32" />
+    <Property Name="Minute" Type="Int32" />
+    <Property Name="Seconde" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CAP">
+    <Key>
+      <PropertyRef Name="IdCap" />
+    </Key>
+    <Property Name="IdCap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nbrDanne" Type="Int32" />
+    <Property Name="Homologue" Type="Int32" />
+    <Property Name="IdNiveau" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Cour">
+    <Key>
+      <PropertyRef Name="IdCour" />
+    </Key>
+    <Property Name="IdCour" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SeiulEliminer" Type="Int32" />
+    <Property Name="IdSpecialite" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Emploie">
+    <Key>
+      <PropertyRef Name="IdEmploie" />
+    </Key>
+    <Property Name="IdEmploie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomEmploie" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdCalendrier" Type="Int32" Nullable="false" />
+    <Property Name="IdSalle" Type="Int32" Nullable="false" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Enseignant">
+    <Key>
+      <PropertyRef Name="Idenseignant" />
+    </Key>
+    <Property Name="Idenseignant" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateNaissance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NCin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdCour" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Etudiant">
+    <Key>
+      <PropertyRef Name="Idetudiant" />
+    </Key>
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateNiassance" Type="DateTime" Precision="3" />
+    <Property Name="Sexe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdNiveau" Type="Int32" />
+    <Property Name="Tel" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="IdBts" Type="Int32" />
+    <Property Name="IdCour" Type="Int32" />
+    <Property Name="Matricule" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LieDeNaissene" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NCin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdFormation" Type="Int32" />
+    <Property Name="IdSpetialite" Type="Int32" />
+    <Property Name="nbinscription" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Formation">
+    <Key>
+      <PropertyRef Name="IdFormation" />
+    </Key>
+    <Property Name="IdFormation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LibelleFormation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionFormation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mois">
+    <Key>
+      <PropertyRef Name="Idmois" />
+    </Key>
+    <Property Name="Idmois" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libillemois" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Niveau">
+    <Key>
+      <PropertyRef Name="IdNiveau" />
+    </Key>
+    <Property Name="IdNiveau" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="NiveauFormation">
+    <Key>
+      <PropertyRef Name="IdNiveauFormation" />
+    </Key>
+    <Property Name="IdNiveauFormation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdNiveau" Type="Int32" />
+    <Property Name="IdFormation" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Note">
+    <Key>
+      <PropertyRef Name="IdNote" />
+    </Key>
+    <Property Name="IdNote" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Note1" Type="Double" Nullable="false" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" />
+    <Property Name="Note2" Type="Double" />
+    <Property Name="Note3" Type="Double" />
+    <Property Name="IdBts" Type="Int32" />
+    <Property Name="IdBtp" Type="Int32" />
+    <Property Name="IdCap" Type="Int32" />
+    <Property Name="IdNiveau" Type="Int32" />
+    <Property Name="DateNote" Type="DateTime" Precision="3" />
+    <Property Name="HeurNote" Type="Time" Precision="7" />
+    <Property Name="IdSemestre" Type="Int32" />
+    <Property Name="IdFormation" Type="Int32" />
+    <Property Name="IdSpetialite" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Presence">
+    <Key>
+      <PropertyRef Name="IdAbsence" />
+    </Key>
+    <Property Name="IdAbsence" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCour" Type="Int32" />
+    <Property Name="Idetudiant" Type="Int32" />
+    <Property Name="Absence" Type="Int32" />
+    <Property Name="DateAbsnece" Type="DateTime" Precision="3" />
+    <Property Name="HeurAbsence" Type="Time" Precision="7" />
+    <Property Name="IdBts" Type="Int32" />
+    <Property Name="IdBtp" Type="Int32" />
+    <Property Name="IdCap" Type="Int32" />
+    <Property Name="IdNiveau" Type="Int32" />
+    <Property Name="IdSemestre" Type="Int32" />
+    <Property Name="IdFormation" Type="Int32" />
+    <Property Name="nbdabsence" Type="Int32" />
+    <Property Name="IdSpetialite" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PresenceEnse">
+    <Key>
+      <PropertyRef Name="IdPresence" />
+    </Key>
+    <Property Name="IdPresence" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="absence" Type="Int32" Nullable="false" />
+    <Property Name="Idenseignant" Type="Int32" Nullable="false" />
+    <Property Name="nbdabsence" Type="Int32" />
+    <Property Name="DateAbsnece" Type="DateTime" Precision="3" />
+    <Property Name="HeurAbsence" Type="Time" Precision="7" />
+    <Property Name="IdCour" Type="Int32" />
+    <Property Name="Idmois" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Salle">
+    <Key>
+      <PropertyRef Name="IdSalle" />
+    </Key>
+    <Property Name="IdSalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdAdministrateur" Type="Int32" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Semestre">
+    <Key>
+      <PropertyRef Name="IdSemestre" />
+    </Key>
+    <Property Name="IdSemestre" Type="Int32" Nullable="false" />
+    <Property Name="LibelleSemestre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sendmail">
+    <Key>
+      <PropertyRef Name="IdSendMail" />
+    </Key>
+    <Property Name="IdSendMail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Specialite">
+    <Key>
+      <PropertyRef Name="IdSpecialiteFormation" />
+    </Key>
+    <Property Name="IdSpecialiteFormation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdFormation" Type="Int32" />
+    <Property Name="IdSpetialite" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tab_BTP">
+    <Key>
+      <PropertyRef Name="IdTabBtp" />
+    </Key>
+    <Property Name="IdTabBtp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="IdBtp" Type="Int32" Nullable="false" />
+    <Property Name="IdAdministrateur" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tab_BTS">
+    <Key>
+      <PropertyRef Name="IdTabBts" />
+    </Key>
+    <Property Name="IdTabBts" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdAdministrateur" Type="Int32" Nullable="false" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="IdBts" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tab_CAP">
+    <Key>
+      <PropertyRef Name="IdTabCAP" />
+    </Key>
+    <Property Name="IdTabCAP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdAdministrateur" Type="Int32" Nullable="false" />
+    <Property Name="IdCap" Type="Int32" Nullable="false" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeSexe">
+    <Key>
+      <PropertyRef Name="ID_Type" />
+    </Key>
+    <Property Name="ID_Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LibelleType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TypeSpecialite">
+    <Key>
+      <PropertyRef Name="IdSpetialite" />
+    </Key>
+    <Property Name="IdSpetialite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LibelleSpecialite" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionSpetialite" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="56" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ConfirmationToken" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsConfirmed" Type="Boolean" />
+    <Property Name="LastPasswordFailureDate" Type="DateTime" Precision="3" />
+    <Property Name="PasswordFailuresSinceLastSuccess" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordChangedDate" Type="DateTime" Precision="3" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordVerificationToken" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordVerificationTokenExpirationDate" Type="DateTime" Precision="3" />
+    <Property Name="RoleId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Name="Provider" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderUserId" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="webpages_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BultainGenral">
+    <Key>
+      <PropertyRef Name="Idetudiant" />
+      <PropertyRef Name="IdNote" />
+      <PropertyRef Name="Note1" />
+      <PropertyRef Name="IdCour" />
+      <PropertyRef Name="Libelle" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note2" Type="Double" />
+    <Property Name="Note3" Type="Double" />
+    <Property Name="IdNote" Type="Int32" Nullable="false" />
+    <Property Name="Note1" Type="Double" Nullable="false" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="nbdabsence" Type="Int32" />
+  </EntityType>
+  <EntityType Name="calendr">
+    <Key>
+      <PropertyRef Name="IdCalendrier" />
+      <PropertyRef Name="IdEmploie" />
+      <PropertyRef Name="NomEmploie" />
+      <PropertyRef Name="IdCour" />
+      <PropertyRef Name="IdSalle" />
+      <PropertyRef Name="Libelle" />
+    </Key>
+    <Property Name="IdCalendrier" Nullable="false" Type="Int32" />
+    <Property Name="Anne" Type="Int32" />
+    <Property Name="Mois" Type="Int32" />
+    <Property Name="Jour" Type="Int32" />
+    <Property Name="Heur" Type="Int32" />
+    <Property Name="Minute" Type="Int32" />
+    <Property Name="Seconde" Type="Int32" />
+    <Property Name="IdEmploie" Nullable="false" Type="Int32" />
+    <Property Name="NomEmploie" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="IdCour" Nullable="false" Type="Int32" />
+    <Property Name="IdSalle" Nullable="false" Type="Int32" />
+    <Property Name="Libelle" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Expr1" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+  </EntityType>
+  <EntityType Name="VtPEnsig">
+    <Key>
+      <PropertyRef Name="Idenseignant" />
+    </Key>
+    <Property Name="nbrabsence" Type="Int32" />
+    <Property Name="IdCour" Type="Int32" />
+    <Property Name="Idenseignant" Type="Int32" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VueAbsence">
+    <Key>
+      <PropertyRef Name="Idetudiant" />
+      <PropertyRef Name="IdCour" />
+      <PropertyRef Name="Observation" />
+    </Key>
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" />
+    <Property Name="NbAbsence" Type="Int32" />
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="LibelleCour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdSemestre" Type="Int32" />
+    <Property Name="Observation" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VueBultain">
+    <Key>
+      <PropertyRef Name="IdCour" />
+      <PropertyRef Name="Libelle" />
+      <PropertyRef Name="Idetudiant" />
+      <PropertyRef Name="Note1" />
+    </Key>
+    <Property Name="IdCour" Type="Int32" Nullable="false" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note1" Type="Double" Nullable="false" />
+    <Property Name="Note2" Type="Double" />
+    <Property Name="Note3" Type="Double" />
+  </EntityType>
+  <EntityType Name="VueFormationNiveau">
+    <Key>
+      <PropertyRef Name="IdFormation" />
+      <PropertyRef Name="IdNiveauFormation" />
+      <PropertyRef Name="IdNiveau" />
+      <PropertyRef Name="Libelle" />
+    </Key>
+    <Property Name="IdFormation" Type="Int32" Nullable="false" />
+    <Property Name="LibelleFormation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionFormation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdNiveauFormation" Type="Int32" Nullable="false" />
+    <Property Name="IdNiveau" Type="Int32" Nullable="false" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VueNote">
+    <Key>
+      <PropertyRef Name="Idetudiant" />
+      <PropertyRef Name="IdNote" />
+      <PropertyRef Name="Note1" />
+    </Key>
+    <Property Name="Idetudiant" Type="Int32" Nullable="false" />
+    <Property Name="IdNote" Type="Int32" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note1" Type="Double" Nullable="false" />
+    <Property Name="Note3" Type="Double" />
+    <Property Name="Note2" Type="Double" />
+  </EntityType>
+</Schema>

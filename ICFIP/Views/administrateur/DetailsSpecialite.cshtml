@@ -1,0 +1,53 @@
+﻿@model ICFIP.Entites.TypeSpecialite
+
+@{
+    ViewBag.Title = "DetailsSpecialite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Details Branche</h2>
+
+            </div>
+
+            <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="display-label">
+                        @Html.DisplayName("Specilaite")
+                        :
+                        @Html.DisplayFor(model => model.LibelleSpecialite)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Description Spetialite")
+                        :
+                        @Html.DisplayFor(model => model.DescriptionSpetialite)
+                    </div>
+
+                    <div class="display-label">
+                        @*@Html.DisplayNameFor(model => model.IdSpetialite)*@
+                    </div>
+                    <div class="display-field">
+                        @Html.HiddenFor(model => model.IdSpetialite)
+                    </div>
+                    <p class="btn btn-primary">
+                        @Html.ActionLink("Modifier", "Pssageditspec", new { @class = "btn btn-info", id = Model.IdSpetialite })
+                    </p>
+                    <p class="btn btn-primary">
+                        @Html.ActionLink("Retourner", "Index")
+                    </p>
+                </div>
+                </div>
+           
+        </div>
+    </div>
+</div>
+<style>
+    a {
+        color: white;
+    }
+</style>

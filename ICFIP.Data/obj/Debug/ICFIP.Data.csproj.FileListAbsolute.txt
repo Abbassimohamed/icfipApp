@@ -1,0 +1,60 @@
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\angular\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb
+C:\Users\anas\Desktop\ICFIP PROJECT\test1\exemple icfip\exemple 1\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll.config
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.dll
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\ICFIP.Data.pdb
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.dll
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.xml
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.csprojResolveAssemblyReference.cache
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.dll
+D:\dossier bureau\project\ICFIP PROJECT\Version Finale\version 1.7\ICFIP\ICFIP.Data\obj\Debug\ICFIP.Data.pdb

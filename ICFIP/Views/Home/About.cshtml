@@ -1,0 +1,1175 @@
+﻿@*@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* Button styles */
+    .show-card {
+        animation: fade-in 0.4s 1s forwards ease-out;
+        background: #fff;
+        border-radius: 4em;
+        border: 0.25em solid #1fa756;
+        color: #1fa756;
+        font-size: 18px;
+        left: 85%;
+        line-height: 1.5;
+        opacity: 0;
+        padding: 1em 1em 1em 4em;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        outline: none;
+    }
+
+        .show-card.hide {
+            animation: fade-out 0.4s forwards ease-out;
+        }
+        /* Image on the button */
+        .show-card img {
+            border-radius: 50%;
+            left: 0.3em;
+            position: absolute;
+            top: 0.25em;
+            width: 3em;
+        }
+
+    .card {
+        bottom: calc(50% - 8em);
+        display: none;
+        height: 16em;
+        left: calc(85% - 10em);
+        position: absolute;
+        transition: all 0.4s 0.4s cubic-bezier(.5,.2,.43,1.33);
+        width: 20em;
+    }
+
+    .close {
+        color: #aaa;
+        cursor: pointer;
+        height: 1em;
+        opacity: 0;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        width: 1em;
+        z-index: 10;
+    }
+
+    .details {
+        position: absolute;
+        bottom: 2.5em;
+        background: #fff;
+        border-radius: 0.25em;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        width: 20em;
+    }
+
+    .name {
+        color: #333;
+        font-weight: bold;
+        opacity: 0;
+        margin: 3em 0 0;
+    }
+
+    .description {
+        color: #666;
+        font-size: 1em;
+        font-weight: 200;
+        line-height: 1.5;
+        opacity: 0;
+        margin: 0.75em 2em 2em;
+    }
+
+    .headshot img {
+        border-radius: 50%;
+        border: 0.5em solid #fff;
+        display: block;
+        height: 6em;
+        margin: -3em auto 0.5em;
+        width: 6em;
+        opacity: 0;
+        transform: translateZ(0);
+    }
+
+    .icon-bar {
+        background: #1fa756;
+        border-radius: 0.25em;
+        height: 4em;
+        left: -1em;
+        position: absolute;
+        right: -1em;
+        top: 13em;
+    }
+
+        .icon-bar ul {
+            display: flex;
+            flex-display: column;
+            flex-wrap: nowrap;
+            padding: 0;
+        }
+
+        .icon-bar li {
+            display: inline-block;
+            font-size: 2em;
+            padding: 0 1em;
+            opacity: 0;
+            width: 33%;
+        }
+
+        .icon-bar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    /* ANIMATIONS */
+
+    /* Show state */
+
+    .card.show .details {
+        animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54,-0.38,.34,1.42);
+    }
+
+    .card.show .name {
+        animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64,1.87,.64,.64);
+    }
+
+    .card.show .description {
+        animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64,1.87,.64,.64);
+    }
+
+    .card.show .headshot img {
+        animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64,1.87,.64,.64);
+    }
+
+    .card.show .icon-bar {
+        animation: show-icon-bar .5s forwards cubic-bezier(.64,1.87,.64,.64);
+    }
+
+        .card.show .icon-bar li {
+            animation: show-icon 0.5s forwards cubic-bezier(.64,1.87,.64,.64);
+        }
+
+            .card.show .icon-bar li:nth-child(1) {
+                animation-delay: 1.8s;
+            }
+
+            .card.show .icon-bar li:nth-child(2) {
+                animation-delay: 1.9s;
+            }
+
+            .card.show .icon-bar li:nth-child(3) {
+                animation-delay: 2s;
+            }
+
+    .card.show .close {
+        animation: fade-in 0.3s 1.3s forwards;
+    }
+
+    /* Hide state */
+
+    .card.hide {
+        animation: drop-card 1s forwards cubic-bezier(.54,-0.38,.34,1.42);
+    }
+
+    /* Animations */
+
+    @@keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-out {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @@keyframes show-icon-bar {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 4em;
+        }
+    }
+
+    @@keyframes show-icon {
+        0% {
+            opacity: 0;
+            transform: rotateZ(-40deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotateZ(0);
+        }
+    }
+
+    @@keyframes show-detail-container {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 13.5em;
+        }
+    }
+
+    @@keyframes pop-in {
+        0% {
+            transform: scale(0.7);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @@keyframes drop-card {
+        100% {
+            bottom: -100%;
+            transform: rotateZ(20deg);
+            opacity: 0;
+        }
+    }
+</style>
+
+
+<script>
+    $('.show-card').click(function (e) {
+        $('.card').addClass('show').css('display', 'block');
+        $('.show-card').addClass('hide');
+    });
+
+    $('.card .close').click(function (e) {
+        $('.card').addClass('hide');
+        setTimeout(function () {
+            $('.card').css('display', 'none').removeClass('show').removeClass('hide');
+        }, 1000);
+        $('.show-card').removeClass('hide');
+    });
+
+
+</script>
+
+<script>
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };
+
+
+</script>
+
+
+<style>
+    .wrapper {
+        position: relative;
+        width: 800px;
+        height: 480px;
+        margin: 2rem auto;
+        overflow: hidden;
+        background-color: #fff;
+        background: radial-gradient(ellipse at center, #fff 40%, #ddd 100%);
+    }
+
+    .part {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        animation-fill-mode: both;
+    }
+
+        .part span {
+            position: absolute;
+            display: block;
+            opacity: 0;
+            white-space: nowrap;
+            font-size: 4rem;
+            animation-fill-mode: both;
+        }
+
+            .part span span {
+                position: absolute;
+                display: block;
+            }
+
+    #one span:nth-of-type(1) {
+        animation-name: fadein;
+        animation-duration: 0.5s;
+        animation-delay: 1s;
+        left: 84px;
+        top: 85px;
+    }
+
+    #one span:nth-of-type(2) {
+        animation-name: fadein;
+        animation-duration: 0.5s;
+        animation-delay: 1.4s;
+        left: 170px;
+        top: 85px;
+    }
+
+    #one span:nth-of-type(3) {
+        animation-name: slide_from_left;
+        animation-duration: 0.5s;
+        animation-delay: 1.6s;
+        font-size: 6.7em;
+        font-style: italic;
+        left: 160px;
+        top: 165px;
+    }
+
+    #one span:nth-of-type(4) {
+        animation-name: slide_from_top;
+        animation-duration: 0.5s;
+        animation-delay: 2.3s;
+        left: 389px;
+        top: 255px;
+    }
+
+    #one span:nth-of-type(5) {
+        animation-name: stamp;
+        animation-duration: 0.4s;
+        animation-delay: 3.2s;
+        font-size: 7.3em;
+        font-weight: 700;
+        left: 230px;
+        top: 345px;
+    }
+
+    #one {
+        transform-origin: 100% 100%;
+        animation-name: part_one_out;
+        animation-duration: 8s;
+        animation-delay: 4s;
+    }
+
+    #two span {
+        font-size: 4.5em;
+    }
+
+        #two span:nth-of-type(1) {
+            top: 100px;
+            left: 36px;
+            animation-name: hinge_in;
+            animation-duration: 1s;
+            animation-delay: 4.2s;
+            transform-origin: 70px 450px;
+        }
+
+        #two span:nth-of-type(2) {
+            top: 100px;
+            left: 120px;
+            animation-name: hinge_in;
+            animation-duration: 1s;
+            animation-delay: 4.7s;
+            transform-origin: 70px 450px;
+        }
+
+        #two span:nth-of-type(3) {
+            top: 180px;
+            left: 50px;
+            font-size: 6.7em;
+            line-height: 1em;
+            font-style: italic;
+            opacity: 1;
+            display: block;
+            overflow: hidden;
+            animation-name: grow_from_left;
+            animation-duration: 1.5s;
+            animation-delay: 5.7s;
+        }
+
+        #two span:nth-of-type(4) {
+            top: 230px;
+            left: 480px;
+            font-weight: 700;
+            animation-name: fadein;
+            animation-duration: 0.5s;
+            animation-delay: 6.2s;
+        }
+
+        #two span:nth-of-type(5) {
+            top: 225px;
+            left: 507px;
+            font-weight: 700;
+            font-size: 6em;
+            animation-name: fadein;
+            animation-duration: 0.5s;
+            animation-delay: 6.45s;
+        }
+
+        #two span:nth-of-type(6) {
+            top: 220px;
+            left: 539px;
+            font-weight: 700;
+            font-size: 8em;
+            animation-name: fadein;
+            animation-duration: 0.5s;
+            animation-delay: 6.7s;
+        }
+
+        #two span:nth-of-type(7) {
+            top: 215px;
+            left: 578px;
+            font-weight: 700;
+            font-size: 10em;
+            animation-name: fadein;
+            animation-duration: 0.5s;
+            animation-delay: 6.95s;
+        }
+
+        #two span:nth-of-type(8) {
+            top: 345px;
+            left: 36px;
+            animation-name: emerge;
+            animation-duration: 0.2s;
+            animation-delay: 7.2s;
+        }
+
+    #two {
+        animation-name: part_two_out;
+        animation-duration: 1s;
+        animation-delay: 8.2s;
+    }
+
+    #three span {
+        opacity: 1;
+    }
+
+        #three span.around {
+            left: 260px;
+            top: 100px;
+            animation-name: half_spin;
+            animation-duration: 1s;
+            animation-delay: 8.4s;
+            transform-origin: 100px 100px;
+        }
+
+            #three span.around span:nth-of-type(1) {
+                top: 30px;
+                left: 0;
+                transform: rotate(-30deg);
+            }
+
+            #three span.around span:nth-of-type(2) {
+                top: 10px;
+                left: 40px;
+                transform: rotate(-20deg);
+            }
+
+            #three span.around span:nth-of-type(3) {
+                top: 0;
+                left: 75px;
+                transform: rotate(-10deg);
+            }
+
+            #three span.around span:nth-of-type(4) {
+                top: 0;
+                left: 120px;
+                transform: rotate(10deg);
+            }
+
+            #three span.around span:nth-of-type(5) {
+                top: 10px;
+                left: 170px;
+                transform: rotate(20deg);
+            }
+
+            #three span.around span:nth-of-type(6) {
+                top: 30px;
+                left: 210px;
+                transform: rotate(30deg);
+            }
+
+        #three span.the {
+            left: 330px;
+            top: 200px;
+            animation-name: fadein;
+            animation-duration: 0.75s;
+            animation-delay: 8.9s;
+        }
+
+        #three span.world {
+            left: 280px;
+            top: 300px;
+            animation-name: half_spin;
+            animation-duration: 1s;
+            transform-origin: 100px -100px;
+            animation-delay: 9.4s;
+        }
+
+            #three span.world span:nth-of-type(1) {
+                top: 0;
+                left: 0;
+                transform: rotate(20deg);
+            }
+
+            #three span.world span:nth-of-type(2) {
+                top: 15px;
+                left: 58px;
+                transform: rotate(10deg);
+            }
+
+            #three span.world span:nth-of-type(3) {
+                top: 16px;
+                left: 100px;
+                transform: rotate(-2deg);
+            }
+
+            #three span.world span:nth-of-type(4) {
+                top: 12px;
+                left: 138px;
+                transform: rotate(-10deg);
+            }
+
+            #three span.world span:nth-of-type(5) {
+                top: 4px;
+                left: 162px;
+                transform: rotate(-20deg);
+            }
+
+    #three {
+        animation-name: part_three_out;
+        animation-duration: 0.5s;
+        animation-delay: 11.4s;
+    }
+
+    #four span:nth-of-type(1) {
+        top: 100px;
+        left: 240px;
+        font-style: italic;
+        animation-name: slide_from_top;
+        animation-duration: 0.5s;
+        animation-delay: 11.15s;
+    }
+
+    #four span:nth-of-type(2) {
+        top: 190px;
+        left: 240px;
+        font-size: 2.5em;
+        animation-name: slide_from_left;
+        animation-duration: 0.5s;
+        animation-delay: 12.15s;
+    }
+
+    #four span:nth-of-type(3) {
+        top: 210px;
+        left: 350px;
+        font-size: 8em;
+        animation-name: slide_from_right;
+        animation-duration: 0.5s;
+        animation-delay: 12.55s;
+    }
+
+    #four span:nth-of-type(4) {
+        top: 340px;
+        left: 230px;
+        animation-name: slide_from_bottom;
+        animation-duration: 0.5s;
+        animation-delay: 13.4s;
+    }
+
+    #four {
+        animation-name: part_four_out;
+        animation-duration: 0.5s;
+        animation-delay: 14.15s;
+    }
+
+    #five span:nth-of-type(1) {
+        top: 100px;
+        left: 70px;
+        font-size: 3em;
+        animation-name: slide_from_right;
+        animation-duration: 2s;
+        animation-delay: 13.9s;
+    }
+
+    #five span:nth-of-type(2) {
+        top: 200px;
+        left: 150px;
+        font-size: 5em;
+        font-weight: 700;
+        animation-name: stamp;
+        animation-duration: 0.2s;
+        animation-delay: 15.9s;
+    }
+
+    #five span:nth-of-type(3) {
+        top: 270px;
+        left: 250px;
+        font-size: 5em;
+        font-weight: 700;
+        animation-name: stamp;
+        animation-duration: 0.2s;
+        animation-delay: 16.65s;
+    }
+
+    #five span:nth-of-type(4) {
+        top: 270px;
+        left: 690px;
+        font-size: 5em;
+        font-weight: 700;
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-delay: 17.15s;
+    }
+
+    #five {
+        animation-name: part_five_out;
+        animation-duration: 1.5s;
+        animation-delay: 18.9s;
+    }
+
+    #six span {
+        opacity: 1;
+    }
+
+        #six span:nth-of-type(1) {
+            top: 170px;
+            left: 110px;
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-delay: 19.9s;
+        }
+
+        #six span:nth-of-type(2) {
+            top: 170px;
+            left: 360px;
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-delay: 20.4s;
+        }
+
+        #six span:nth-of-type(3) {
+            top: 270px;
+            left: 210px;
+            font-style: italic;
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-delay: 21.9s;
+        }
+
+        #six span:nth-of-type(4) {
+            top: 270px;
+            left: 490px;
+            font-style: italic;
+            font-weight: 700;
+            animation-name: fadein;
+            animation-duration: 2.5s;
+            animation-delay: 23.4s;
+        }
+
+    @@keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes slide_from_left {
+        from {
+            opacity: 1;
+            left: -50rem;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes slide_from_top {
+        from {
+            opacity: 1;
+            top: -30rem;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes slide_from_right {
+        from {
+            opacity: 1;
+            left: 110%;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes slide_from_bottom {
+        from {
+            opacity: 1;
+            top: 110%;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes stamp {
+        from {
+            opacity: 0;
+            transform: scale(5, 5);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
+    @@keyframes part_one_out {
+        0% {
+            transform: rotate(0deg) scale(1, 1) translate(0, 0);
+        }
+
+        5% {
+            transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -605px);
+        }
+
+        10% {
+            transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -605px);
+        }
+
+        15% {
+            transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -720px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -720px);
+            opacity: 0;
+        }
+    }
+
+    @@keyframes hinge_in {
+        0% {
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+
+        90% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    }
+
+    @@keyframes grow_from_left {
+        from {
+            opacity: 1;
+            width: 0;
+        }
+
+        to {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+    @@keyframes emerge {
+        from {
+            opacity: 0;
+            transform: scale(0.2, 0.2);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
+    @@keyframes part_two_out {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1) translate(0, 0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: rotate(180deg) scale(3, 3) translate(550px, -750px);
+        }
+    }
+
+    @@keyframes half_spin {
+        from {
+            opacity: 0;
+            transform: rotate(-180deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    }
+
+    @@keyframes part_three_out {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        99% {
+            opacity: 1;
+            transform: translate(0, 500px);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(0, 500px);
+        }
+    }
+
+    @@keyframes part_four_out {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        99% {
+            opacity: 1;
+            transform: translate(-800px, 0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-800px, 0);
+        }
+    }
+
+    @@keyframes part_five_out {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+
+
+
+
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="panel-group">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+
+
+                    <h1 class="text-center">
+                        <span class="txt-rotate"
+                              data-period="1500"
+                              data-rotate='[ "A PROPOS ICFIP!." ]'></span>
+                    </h1>
+
+                </div>
+                <div class="panel-body">
+
+                    <!-- .animation about -->
+                    <div class="panel-group">
+                        <div class="panel panel-primary">
+
+                            <div class="panel-heading">
+
+
+                                <h1 class="text-center title-2"><span>A PROPOS </span>  </h1>
+                                <!-- .panel -->
+
+
+                            </div>
+
+                            <div class="panel-body">
+
+                                <div class="wrapper">
+
+                                    <div id="one" class="part">
+                                        <span>&ldquo;ICFIP </span>
+                                        <span>  </span>
+                                        <span>est une </span>
+                                        <span>université </span>
+                                        <span>privé</span>
+                                    </div>
+
+                                    <div id="two" class="part">
+                                        <span>BTS </span>
+                                        <span></span>
+                                        <span>BTP  </span>
+                                        <span>CAP </span>
+                                        <span></span>
+                                        <span></span>
+                                        <span>des  </span>
+                                        <span>FORMATIONS</span>
+                                        
+                                        
+                                       
+                                    </div>
+
+                                    <div id="three" class="part">
+                                        <span class="around">
+                                            <span></span>
+                                            <span>r</span>
+                                            <span>o</span>
+                                            <span>u</span>
+                                            <span>n</span>
+                                            <span>d </span>
+                                        </span>
+                                        <span class="the">the</span>
+                                        <span class="world">
+                                            <span>w</span>
+                                            <span>o</span>
+                                            <span>r</span>
+                                            <span>l</span>
+                                            <span>d</span>
+                                        </span>
+                                    </div>
+
+                                    <div id="four" class="part">
+                                        <span>so simply</span>
+                                        <span>that </span>
+                                        <span>any </span>
+                                        <span>individual</span>
+                                    </div>
+
+                                    <div id="five" class="part">
+                                        <span>can carry and operate his</span>
+                                        <span>own </span>
+                                        <span>apparatus.</span>
+                                        <span>&rdquo;</span>
+                                    </div>
+
+                                    <div id="six" class="part">
+                                        <span>-Institut Cherif De Formation Et </span>
+                                    <br>
+                                        <span> Intégration Professionnel </span>
+                                        <span>October, </span>
+                                        <span>2006</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                            <section class="background-color-light-gray">
+
+                                <!-- .container -->
+                                <div class="container">
+                                    <!-- .row -->
+                                    <div class="row clearfix">
+                                        <div class="col-xs-12">
+
+                                            <div class="col-md-12 col-md-offset-0">
+                                                <div class="panel-group">
+                                                    <div class="panel panel-primary">
+
+                                                        <div class="panel-heading">
+
+
+                                                            <h1 class="text-center title-2"><span>A PROPOS ENSEIGNANT </span></h1>
+                                                            <!-- .panel -->
+                                                            <div class="panel panel-tabs">
+                                                                <!-- .nav -->
+                                                                <ul class="nav nav-tabs nav-justified">
+                                                                    <li class="active">
+                                                                        <a href="#step-1" data-toggle="tab">
+                                                                            <h1><i class="flaticon-notes3"></i></h1>
+                                                                            <div>
+                                                                                <img class="center-block  " width="100" height="100" src="http://www.setforcollege.com/blog/wp-content/uploads/2014/05/Caucasian-College-Student-Female.jpg">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#step-2" data-toggle="tab">
+                                                                            <h1><i class="flaticon-internet6"></i></h1>
+                                                                            <div>
+                                                                                <img class="center-block  " width="100" height="100" src="http://cdn.prtl.eu/mp/60c403f7.jpg">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#step-3" data-toggle="tab">
+                                                                            <h1><i class="flaticon-gear83"></i></h1>
+                                                                            <div>
+                                                                                <img class="center-block  " width="100" height="100" src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/SGB%20University%20regulations%20PAX000370-01.jpg?itok=Ac4lBbM6">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#step-4" data-toggle="tab">
+                                                                            <h1><i class="flaticon-open79"></i></h1>
+                                                                            <div>
+                                                                                <img class="center-block  " width="100" height="100" src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/SGB%20University%20regulations%20PAX000370-01.jpg?itok=Ac4lBbM6">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- /.nav -->
+                                                                <!-- .tab-content -->
+
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="tab-content panel-body">
+                                                            <!-- #step-1 -->
+
+                                                            <div class="tab-pane fade active in" id="step-1">
+
+                                                                <p>
+                                                                    Phasellus commodo ipsum in lorem consequat, sit amet elementum dui luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis risus cursus, lobortis tellus sit amet, suscipit velit. Pellentesque ac turpis at urna sagittis sagittis congue dapibus metus. Aliquam venenatis, magna nec rutrum iaculis, velit lacus sagittis sapien, sit amet eleifend ante eros vitae sapien. Integer a rutrum orci. Phasellus non diam et lorem sagittis mollis sed ut arcu in dolor blandit egestas.
+                                                                </p>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta molestiae sed vel praesentium quae molestias sit necessitatibus velit tempore, itaque deleniti ut magnam praesentium animi minus facere, eum, corrupti.
+                                                                </p>
+                                                            </div>
+                                                            <!-- /#step-1 -->
+                                                            <!-- #step-2 -->
+                                                            <div class="tab-pane fade" id="step-2">
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at euismod nulla, congue mollis est. Pellentesque bibendum, eros efficitur interdum placerat, justo nisi mattis elit, quis fermentum leo justo ut nisi. Nulla accumsan arcu risus, quis rhoncus nisi lobortis a. Proin maximus congue dapibus. Donec non turpis sit amet sapien sodales mollis eu quis magna. Suspendisse congue, nisi id rhoncus congue, leo magna hendrerit neque, sit amet sodales sapien nisi id lorem. Fusce facilisis commodo nunc nec aliquam.
+                                                                </p>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa est consectetur unde delectus minus neque, odit officiis aspernatur voluptates eveniet dolorem sit id illum in repellendus distinctio, explicabo veritatis iste.
+                                                                </p>
+                                                            </div>
+                                                            <!-- /#step-2 -->
+                                                            <!-- #step-3 -->
+                                                            <div class="tab-pane fade" id="step-3">
+                                                                <p>
+                                                                    Vivamus feugiat dignissim mi, sed faucibus augue suscipit et. Etiam est quam, imperdiet eu nibh id, eleifend cursus dolor. Proin egestas orci in quam auctor, ultricies tristique tellus dictum. Nullam orci orci, feugiat sed purus ac, placerat faucibus nulla. Cras mattis ullamcorper dui, quis sodales odio tincidunt vitae. Phasellus vulputate sed tellus in semper. Ut eu vulputate tellus. Nunc tincidunt sem ullamcorper hendrerit sagittis. Nulla dignissim maximus bibendum. Suspendisse congue, nisi id rhoncus congue, leo magna hendrerit neque, sit amet sodales sapien nisi id lorem.
+                                                                </p>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur et reprehenderit fugit sit in veniam deserunt rerum totam animi iure earum eligendi, ut itaque impedit, nam iusto perspiciatis, dolor consequatur.
+                                                                </p>
+                                                            </div>
+                                                            <!-- /#step-3 -->
+                                                            <!-- #step-4 -->
+                                                            <div class="tab-pane fade" id="step-4">
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto animi ipsam consequuntur ipsa cumque illo culpa ea, quasi eveniet aliquid, hic unde ipsa sit officia, iste dolorem debitis nemo ipsum dolor sit amet, consectetur adipisicing elit. Autem, eum, distinctio. Illo repudiandae odio dolorum, modi totam. Hic eveniet praesentium mollitia magnam ipsum. Atque quisquam optio corporis, consequuntur, dolore reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa est consectetur unde delectus minus neque, odit officiis aspernatur voluptates eveniet.
+                                                                </p>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste saepe dolore mollitia ad, nihil et totam, ratione velit ipsam repudiandae ipsum ex corrupti doloribus alias quasi repellendus tenetur laudantium.
+                                                                </p>
+                                                            </div>
+                                                            <!-- /#step-4 -->
+                                                        </div>
+                                                        <!-- /.tab-content -->
+                                                        <!-- /.panel -->
+                                                    </div>
+                                                </div>
+                                                <!-- /.row -->
+                                            </div>
+                                            <!-- /.container -->
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>*@
+
+

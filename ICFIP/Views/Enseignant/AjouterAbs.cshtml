@@ -1,0 +1,81 @@
+﻿@model ICFIP.Entites.Etudiants
+
+@{
+    ViewBag.Title = "AjouterAbs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-6 col-md-offset-3 ">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+
+                    <h2>Liste des absences</h2>
+
+
+                </div>
+
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    <div class="panel-body">
+
+                        <table class="table table-bordered">
+                            <tr class="btn-primary">
+                                <th>Nome </th>
+                                <th>Prenom</th>
+                                <th>Presence </th>
+
+
+
+                            </tr>
+                            @for (var i = 0; i < Model.ListeEtudiants.Count; i++)
+                            {
+                            <tr class="info">
+
+                                <td>@Html.DisplayFor(m => Model.ListeEtudiants[i].Nom)</td>
+                                <td>@Html.DisplayFor(m => Model.ListeEtudiants[i].Prenom)</td>
+                                <td>@Html.CheckBoxFor(m => Model.ListeEtudiants[i].BoolIsPresnece)</td>
+                                @Html.HiddenFor(m => Model.ListeEtudiants[i].Idetudiant)
+
+                                @Html.HiddenFor(m => Model.ListeEtudiants[i].UserId)
+
+                            </tr>
+                            }
+                        </table>
+                        <p>
+                            <input class="btn btn-primary" type="submit" value="Enregistrer" />
+                        </p>
+                        <div class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "Index")
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                }
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+                @section Scripts {
+                    @Scripts.Render("~/bundles/jqueryval")
+                }
+       <style>
+           a{
+               color:white;
+           }     
+ </style>

@@ -1,0 +1,1104 @@
+﻿@model ICFIP.Entites.LoginModel
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<style>
+    /* make keyframes that tell the start state and the end state of our object */
+    @@-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@-moz-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fade-in {
+        opacity: 0; /* make things invisible upon start */
+        -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+        -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+
+        .fade-in.one {
+            -webkit-animation-delay: 0.7s;
+            -moz-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+        }
+
+        .fade-in.two {
+            -webkit-animation-delay: 1.2s;
+            -moz-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+        }
+
+        .fade-in.three {
+            -webkit-animation-delay: 1.6s;
+            -moz-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+        }
+
+    /*---make a basic box ---*/
+</style>
+
+
+
+<style>
+        @@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300);
+
+        body {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        .LigneImage {
+            padding-top: 10%;
+            margin-bottom:9%;
+        }
+        /*body .container .card {
+      margin: 0 auto;
+      display: inline-block;
+      margin-left: 80px;
+      margin-top: 80px;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      width: 280px;
+      text-align: center;
+      position: relative;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      cursor: pointer;
+      opacity: 0.5;
+      box-shadow: 0px 17px 46px -10px #777777;
+      height: 420px;
+      border-radius: 14px;
+    }*/
+        body .container .card {
+            margin: 0 auto;
+            display: inline-block;
+            margin-left: 33px;
+            margin-top: 40px;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            width: 25%;
+            text-align: center;
+            position: relative;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            cursor: pointer;
+            opacity: 0.5;
+            box-shadow: 0px 17px 46px -10px #777777;
+            height: 300px;
+            border-radius: 14px;
+        }
+
+            body .container .card:nth-of-type(1) {
+                -webkit-animation: intro 1s 0.1s forwards;
+                animation: intro 1s 0.1s forwards;
+            }
+
+            body .container .card:nth-of-type(2) {
+                -webkit-animation: intro 1s 0.2s forwards;
+                animation: intro 1s 0.2s forwards;
+            }
+
+            body .container .card:nth-of-type(3) {
+                -webkit-animation: intro 1s 0.3s forwards;
+                animation: intro 1s 0.3s forwards;
+            }
+
+            body .container .card:nth-of-type(1) {
+                background: -webkit-linear-gradient(45deg, #c96881 0%, #f7b695 100%);
+                background: -moz-linear-gradient(45deg, #c96881 0%, #f7b695 100%);
+            }
+
+            body .container .card:nth-of-type(2) {
+                background: -webkit-linear-gradient(45deg, #6B6ECC 0%, #89BFDF 100%);
+                background: -moz-linear-gradient(45deg, #6B6ECC 0%, #89BFDF 100%);
+            }
+
+            body .container .card:nth-of-type(3) {
+                background: -webkit-linear-gradient(45deg, #81B77B 0%, #A3E3C3 100%);
+                background: -moz-linear-gradient(45deg, #81B77B 0%, #A3E3C3 100%);
+            }
+
+            body .container .card:hover .card_inner__header img {
+                left: -50px;
+                -webkit-transition: all 3.4s linear;
+                transition: all 3.4s linear;
+            }
+
+            body .container .card:hover .card_inner__cta button {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            body .container .card:nth-of-type(1):hover .card_inner__circle img {
+                -webkit-animation: launch 1s forwards;
+                animation: launch 1s forwards;
+            }
+
+            body .container .card:nth-of-type(1) .card_inner__circle img {
+                top: 22px;
+                left: 1px;
+            }
+
+            body .container .card:nth-of-type(2):hover .card_inner__circle img {
+                -webkit-animation: spin 1s forwards;
+                animation: spin 1s forwards;
+            }
+
+            body .container .card:nth-of-type(2) .card_inner__circle img {
+                top: 22px;
+            }
+
+            body .container .card:nth-of-type(3):hover .card_inner__circle img {
+                -webkit-animation: fly 1s forwards;
+                animation: fly 1s forwards;
+            }
+
+            body .container .card:nth-of-type(3) .card_inner__circle img {
+                top: 22px;
+                left: 1px;
+            }
+
+            body .container .card:hover {
+                opacity: 1;
+            }
+
+        body .container .card_inner__circle {
+            overflow: hidden;
+            width: 70px;
+            position: absolute;
+            background: #F1F0ED;
+            z-index: 10;
+            height: 70px;
+            border-radius: 100px;
+            left: 0;
+            box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.28);
+            right: 0;
+            margin: auto;
+            border: 4px solid white;
+            top: 82px;
+        }
+
+            body .container .card_inner__circle img {
+                height: 26px;
+                position: relative;
+                top: 17px;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+            }
+
+        body .container .card_inner__header {
+            height: 120px;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            overflow: hidden;
+        }
+
+            body .container .card_inner__header img {
+                width: 120%;
+                position: relative;
+                top: -30px;
+                left: 0;
+                -webkit-transition: all 0.1s linear;
+                transition: all 0.1s linear;
+            }
+
+        body .container .card_inner__content {
+            padding: 20px;
+        }
+
+            body .container .card_inner__content .price {
+                color: white;
+                font-weight: 800;
+                font-size: 70px;
+                text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+            }
+
+            body .container .card_inner__content .text {
+                color: rgba(255, 255, 255, 0.6);
+                font-weight: 100;
+                margin-top: 20px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            body .container .card_inner__content .title {
+                font-weight: 800;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.64);
+                margin-top: 40px;
+                font-size: 25px;
+                letter-spacing: 1px;
+            }
+
+        body .container .card_inner__cta {
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 200px;
+        }
+
+            body .container .card_inner__cta button {
+                padding: 16px;
+                box-shadow: 0px 0px 40px 4px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+                width: 100%;
+                background: -webkit-linear-gradient(-90deg, #fe5e7d 0%, #e5375b 100%);
+                background: -moz-linear-gradient(-90deg, #fe5e7d 0%, #e5375b 100%);
+                border: none;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                color: white;
+                outline: none;
+                font-size: 20px;
+                border-radius: 6px;
+                -webkit-transform: scale(0.94);
+                transform: scale(0.94);
+                cursor: pointer;
+                -webkit-transition: box-shadow .3s, -webkit-transform .3s .1s;
+                transition: box-shadow .3s, -webkit-transform .3s .1s;
+                transition: box-shadow .3s, transform .3s .1s;
+                transition: box-shadow .3s, transform .3s .1s, -webkit-transform .3s .1s;
+            }
+
+                body .container .card_inner__cta button span {
+                    text-shadow: 0px 4px 18px #BA3F57;
+                }
+
+                body .container .card_inner__cta button:hover {
+                    box-shadow: 0px 0px 60px 8px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+                }
+
+        @@-webkit-keyframes launch {
+            0% {
+                left: 1px;
+            }
+
+            25% {
+                top: -50px;
+                left: 1px;
+            }
+
+            50% {
+                left: -100px;
+            }
+
+            75% {
+                top: 100px;
+                -webkit-transform: rotate(40deg);
+                transform: rotate(40deg);
+            }
+
+            100% {
+                left: 1px;
+            }
+        }
+
+        @@keyframes launch {
+            0% {
+                left: 1px;
+            }
+
+            25% {
+                top: -50px;
+                left: 1px;
+            }
+
+            50% {
+                left: -100px;
+            }
+
+            75% {
+                top: 100px;
+                -webkit-transform: rotate(40deg);
+                transform: rotate(40deg);
+            }
+
+            100% {
+                left: 1px;
+            }
+        }
+
+        @@-webkit-keyframes fly {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                top: -50px;
+                left: 50px;
+            }
+
+            50% {
+                left: -130px;
+            }
+
+            75% {
+                top: 60px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+
+        @@keyframes fly {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                top: -50px;
+                left: 50px;
+            }
+
+            50% {
+                left: -130px;
+            }
+
+            75% {
+                top: 60px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+
+        @@-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+            }
+        }
+
+        @@keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+            }
+        }
+
+        @@-webkit-keyframes intro {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            25% {
+                -webkit-transform: scale(1.06);
+                transform: scale(1.06);
+            }
+
+            50% {
+                -webkit-transform: scale(0.965);
+                transform: scale(0.965);
+            }
+
+            75% {
+                -webkit-transform: scale(1.02);
+                transform: scale(1.02);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @@keyframes intro {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            25% {
+                -webkit-transform: scale(1.06);
+                transform: scale(1.06);
+            }
+
+            50% {
+                -webkit-transform: scale(0.965);
+                transform: scale(0.965);
+            }
+
+            75% {
+                -webkit-transform: scale(1.02);
+                transform: scale(1.02);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+</style>
+
+
+
+
+
+
+
+<style>
+    .arrow,
+    .arrow:before {
+        position: absolute;
+        left: 50%;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        top: 95%;
+        margin: -20px 0 0 -20px;
+        -webkit-transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+        border-right: 2px black solid;
+        border-bottom: 2px black solid;
+    }
+
+        .arrow:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            margin: -10px 0 0 -10px;
+            border-left: none;
+            border-top: none;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: arrow;
+        }
+
+    @@keyframes arrow {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-10px, -10px);
+        }
+    }
+</style>
+
+
+
+
+<style>
+    #t-cards {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #345;
+    }
+
+    /********************************/
+    /*          Panel cards         */
+    /********************************/
+    .panel.panel-card {
+        position: relative;
+        height: 550px;
+        border: none;
+        overflow: hidden;
+    }
+
+        .panel.panel-card .panel-heading {
+            position: relative;
+            z-index: 2;
+            height: 300px;
+            border-bottom-color: #fff;
+            overflow: hidden;
+            -webkit-transition: height 600ms ease-in-out;
+            transition: height 600ms ease-in-out;
+        }
+
+            .panel.panel-card .panel-heading img {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                z-index: 1;
+                width: 120%;
+                -webkit-transform: translate3d(-50%,-50%,0);
+                transform: translate3d(-50%,-50%,0);
+            }
+
+            .panel.panel-card .panel-heading button {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                z-index: 3;
+            }
+
+        .panel.panel-card .panel-figure {
+            position: absolute;
+            top: auto;
+            left: 50%;
+            z-index: 3;
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 1;
+            -webkit-box-shadow: 0 0 0 3px #fff;
+            box-shadow: 0 0 0 3px #fff;
+            -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+            -webkit-transition: opacity 400ms ease-in-out;
+            transition: opacity 400ms ease-in-out;
+        }
+
+        .panel.panel-card .panel-body {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            -webkit-transition: padding 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+        }
+
+        .panel.panel-card .panel-thumbnails {
+            padding: 0 15px 20px;
+        }
+
+    .panel-thumbnails .thumbnail {
+        width: 60px;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+
+    .panel.panel-card:hover .panel-heading {
+        height: 55px;
+        -webkit-transition: height 400ms ease-in-out;
+        transition: height 400ms ease-in-out;
+    }
+
+    .panel.panel-card:hover .panel-figure {
+        opacity: 0;
+        -webkit-transition: opacity 400ms ease-in-out;
+        transition: opacity 400ms ease-in-out;
+    }
+
+    .panel.panel-card:hover .panel-body {
+        padding-top: 20px;
+        -webkit-transition: padding 400ms ease-in-out;
+        transition: padding 400ms ease-in-out;
+    }
+</style>
+
+
+
+
+<!-- Carousel
+        ================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/SGB%20University%20regulations%20PAX000370-01.jpg?itok=Ac4lBbM6">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h2>Brevet de technicien supérieur</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/SGB%20family%20visits.jpg?itok=ti05Ymqs">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h2>Bâtiment et travaux publics</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/SGB%20Be%20a%20good%20neighbour%20PAD002535-01.jpg?itok=bg_2Tiid">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h2>Certificat d'aptitude professionnelle</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.carousel-inner -->
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span style="color:#31708f" class="glyphicon glyphicon glyphicon-chevron-left"></span>
+
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span style="color:#31708f" class="glyphicon glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-- /.carousel -->
+
+<div class="onepage">
+
+    <section id="section-1" class="section horizontal">
+
+
+
+        <div>
+
+
+            <h1 style="color:#101010 ;margin-top:-3px   ;font-family: 'Lobster', cursive; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;" data-wow-delay=".8s" data-waw-duration="1s" class="text-center title"> Institut Cherif de Formation <br>et d’Intégration Professionnelle</h1>
+        </div>
+
+
+        <div class="arrow"></div>
+        <div class="LigneImage">
+
+            <div class='container'>
+                <section class='card'>
+                    <div class='card_inner'>
+                        <div class='card_inner__circle'>
+                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png'>
+                        </div>
+                        <div class='card_inner__header'>
+                            <img src='http://www.acfe.com/uploadedImages/ACFE_Website/Content/images/membership-certification/graduate-member.jpg'>
+                        </div>
+                        <div class='card_inner__content'>
+                            <div class='title'>Brevet de technicien supérieur</div>
+
+
+                        </div>
+                        <div class='card_inner__cta'>
+                            <button>
+                                <span>
+
+                                    <a href="#section-2"> BTS&raquo;</a>
+                                </span>
+
+
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class='card'>
+                    <div class='card_inner'>
+                        <div class='card_inner__circle'>
+                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cog.png'>
+                        </div>
+                        <div class='card_inner__header'>
+                            <img src='http://www.simpletuition.com/wp-content/uploads/2013/09/loan-obligations.jpg'>
+                        </div>
+                        <div class='card_inner__content'>
+                            <div class='title'>Certificat d'aptitude professionnelle</div>
+
+                        </div>
+                        <div class='card_inner__cta'>
+                            <button>
+                                <span>
+
+                                    <a href="#section-3"> CAP&raquo;</a>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class='card'>
+                    <div class='card_inner'>
+                        <div class='card_inner__circle'>
+                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/paperplane.png'>
+                        </div>
+                        <div class='card_inner__header'>
+                            <img src='https://oied.ncsu.edu/MSA/wp-content/uploads/2013/03/shutterstock_59139463.jpg'>
+                        </div>
+                        <div class='card_inner__content'>
+                            <div class='title'>Bâtiment et travaux publics</div>
+
+                        </div>
+                        <div class='card_inner__cta'>
+                            <button>
+
+
+                                <a href="#section-4"> BTP&raquo;</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        @*<div style="margin-top:10%;margin-left:20%"   >
+
+                <div class="col-md-3">
+                    <div class="panel panel-info" >
+                        <div class="panel-heading" >
+                            <h3 style="color:#31b0d5" class="text-center">Brevet de technicien supérieur</h3>
+
+                        </div>
+                        <div class="panel-body text-center">
+                            <img class="img-circle" style="margin-left:-12%" src="http://www.acfe.com/uploadedImages/ACFE_Website/Content/images/membership-certification/graduate-member.jpg" alt="Generic placeholder image" width="140" height="140">
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <span style="color:#31708f" class="glyphicon glyphicon-calendar">More information</span>
+                            </li>
+
+                        </ul>
+                        <div class="panel-footer"> <a class="btn btn-info btn btn-lg btn-block  " href="#section-2">BTS &raquo;</a> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 style="color:#31708f" class="text-center">Certificat d'aptitude professionnelle</h3>
+
+                        </div>
+                        <div class="panel-body text-center">
+                            <img class="img-circle" style="margin-left:-12%" src="http://www.simpletuition.com/wp-content/uploads/2013/09/loan-obligations.jpg" alt="Generic placeholder image" width="140" height="140">
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <span style="color:#31708f" class="glyphicon glyphicon-calendar">More information</span>
+                            </li>
+
+                        </ul>
+                        <div class="panel-footer"> <a class="btn btn-info btn btn-lg btn-block " href="#section-3">CAP &raquo;</a> </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="col-md-3">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 style="color:#31708f" class="text-center">Bâtiment et travaux publics</h3>
+
+                        </div>
+                        <div class="panel-body text-center">
+                            <img class="img-circle" style="margin-left:-12%" src="https://oied.ncsu.edu/MSA/wp-content/uploads/2013/03/shutterstock_59139463.jpg" alt="Generic placeholder image" width="140" height="140">
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <span style="color:#31708f" class="glyphicon glyphicon-calendar">More information</span>
+                            </li>
+
+                        </ul>
+                        <div class="panel-footer"> <a class="btn btn-info btn btn-lg btn-block " href="#section-4">BTP &raquo;</a> </div>
+                    </div>
+                </div>
+
+            </div>*@
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <section id="section-2" class="section horizontal">
+
+        <h1 class="alert alert-info col-md-6 col-md-offset-3" role="alert" style="color:#31b0d5 ;margin-top:-1px ;
+      font-family: 'Lobster', cursive; visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;"
+            data-wow-delay=".200s" data-waw-duration="1s">
+            Brevet de technicien supérieur(BTS)
+        </h1>
+        <div style="margin-top:20%">
+            <div class="row ">
+                @*style="margin-top:15%;margin-left:10%">*@
+                <div class="col-lg-4">
+
+                    <div>
+                        <div>
+                            <div class="col-lg-12">
+                                <div class="panel panel-default panel-card">
+                                    <div class="panel-heading">
+                                        <img src="https://www.forma-search.com/uploads/gallerie/FicheMetier/59/assistant-en-ressources-humaines.jpg" />
+
+                                    </div>
+
+                                    <div class="panel-body text-center">
+                                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Assistant de Direction.</a></h4>
+
+                                    </div>
+                                    <div class="panel-thumbnails">
+                                        « assistant de direction » est un cursus d'études se déroulant sur deux ans. Il forme les étudiants à traiter de tâches relatives à l'administration, à la communication
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                        <div>
+                            <div class="col-lg-12">
+                                <div class="panel panel-default panel-card">
+                                    <div class="panel-heading">
+                                        <img src="http://www.sefaireaider.com/blogs/wp-content/uploads/animateur-pour-enfants.jpg" />
+
+                                    </div>
+
+                                    <div class="panel-body text-center">
+                                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Animatrice Jardin d'enfant.</a></h4>
+
+                                    </div>
+                                    <div class="panel-thumbnails">
+                                        Un jardin d’enfants  est un lieu de garde « collectif » destiné aux enfants en âge pré-scolaire (de 2 ans à 6 ans). Il permet à l’enfant de découvrir la vie en collectivité.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                @*<div class="clearfix visible-xs-block"></div>*@
+                <div class="col-lg-4">
+                    @*col-sm-4">*@
+                    <div>
+                        @*class="container">*@
+                        <div>
+                            @*class="row">*@
+                            <div class="col-lg-12">
+                                <div class="panel panel-default panel-card">
+                                    <div class="panel-heading">
+                                        <img src="http://home.exellesuccess.com/consulting/wp-content/uploads/sites/3/2014/05/Corporate-Finance-300x199.jpg" />
+
+                                    </div>
+
+                                    <div class="panel-body text-center">
+                                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Comptabilité et finance.</a></h4>
+
+                                    </div>
+                                    <div class="panel-thumbnails">
+                                        La comptabilité est une discipline pratique, consistant à schématiser, répertorier et enregistrer les données chiffrées permettant de refléter et de qualifier
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="section-3" class="section horizontal">
+
+
+
+
+<!-- .animation Diracteur -->
+<h1 class="alert alert-info col-md-6 col-md-offset-3" role="alert" style="color:#31b0d5" style="color:#31b0d5">Certificat d'aptitude professionnelle(CAP)</h1>
+
+
+    <div class="Rowcentred" style="padding-left:20%;margin-top:20%">
+        <div class="row">
+            <div class="col-lg-4 ">
+
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="http://iutcherbourgmanche.unicaen.fr/medias/photo/img_1325782380649.jpg" />
+
+                        </div>
+
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Electricité Batiment.</a></h4>
+
+                        </div>
+                        <div class="panel-thumbnails">
+                            l'électricien est chargé de la réalisation, de la maintenance, de la modification d'installations électriques
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4">
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default panel-card">
+                        <div class="panel-heading">
+                            <img src="http://www.sncf.com/fr/ressources/imagecache/sncfcom_media_image_100_percent/images/ATO_12_INFRA_0657.jpg" />
+
+                        </div>
+
+                        <div class="panel-body text-center">
+                            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Agent Informatique.</a></h4>
+
+                        </div>
+                        <div class="panel-thumbnails">
+                            En informatique, un agent ou agent logiciel est un logiciel qui agit de façon autonome. C'est un programme qui accomplit des tâches à la manière d'un automate.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+<section id="section-4" class="section horizontal">
+
+
+
+    <h1 class="alert alert-info col-md-6 col-md-offset-3" role="alert" style="color:#31b0d5">Bâtiment et travaux publics(BTP)</h1>
+
+
+
+    <div class="Rowcentred" style="margin-top:20%">
+        <div class="col-lg-4">
+
+
+
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="http://www.cfa-trajectoire-hotellerie.ac-versailles.fr/IMG/jpg/fotolia_52991190_xs-2.jpg" />
+
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Accueil et Réception.</a></h4>
+
+                    </div>
+                    <div class="panel-thumbnails">
+                        la réception de travaux correspond à l'acte juridique correspondant au moment où le maître de l'ouvrage prend possession de la prestation réalisée dans le contrat passé avec le prestataire.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4">
+
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="http://www.compta-facile.com/wp-content/uploads/2013/01/trouver-un-expert-comptable-2.jpg" />
+
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Comptable d'entreprise.</a></h4>
+
+                    </div>
+                    <div class="panel-thumbnails">
+                        La comptabilité d'entreprise est un outil d'évaluation recensant et communiquant des informations<br>
+                        l'activité économique<br>
+                        les éléments de patrimoine incorporel
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        @*<div class="clearfix visible-xs-block"></div>*@
+        <div class="col-lg-4">
+
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="http://m2l-informatique.com/wp-content/uploads/2015/09/shutterstock_257900936.jpg" />
+
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Informatique et Réseau .</a></h4>
+
+                    </div>
+                    <div class="panel-thumbnails">
+                        est un cursus d'études se déroulant sur deux ans . Il peut être préparé en formation continue, en alternance, par correspondance avec le  formation initiale.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+</section>
+
+</div>
+
+

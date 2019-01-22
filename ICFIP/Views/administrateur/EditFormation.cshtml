@@ -1,0 +1,77 @@
+﻿@model ICFIP.Entites.Formation
+
+@{
+    ViewBag.Title = "EditFormation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Modifier Formation</h2>
+            </div>
+
+            <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+
+
+
+                        <div class="editor-label">
+                            @*@Html.LabelFor(model => model.IdFormation)*@
+                        </div>
+                        <div class="editor-field">
+                            @Html.HiddenFor(model => model.IdFormation)
+                            @Html.ValidationMessageFor(model => model.IdFormation)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.LibelleFormation)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.LibelleFormation)
+                            @Html.ValidationMessageFor(model => model.LibelleFormation)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.DescriptionFormation)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.DescriptionFormation)
+                            @Html.ValidationMessageFor(model => model.DescriptionFormation)
+                        </div>
+
+                        <p>
+                            <input type="submit" class="btn btn-primary" value="Enregistrer" />
+                        </p>
+
+                        <div class="btn btn-primary">
+                            @Html.ActionLink("Retourner", "GereFormation")
+                        </div>
+
+
+
+
+                    }
+                </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<style>
+    a {
+        color: white;
+    }
+</style>

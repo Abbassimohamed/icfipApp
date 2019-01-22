@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ICFIP.Entites.Etudiant>
+@{
+    ViewBag.Title = "GerNote";
+}
+
+<h2>GerNote</h2>
+@*<script>
+
+    var tabval1 = document.querySelector('input[name="genderS"]:checked').value;
+
+
+
+
+</script>*@
+@using (Html.BeginForm("AddAbs", "Enseignant", FormMethod.Post, new { etud = ViewBag.check }))
+{
+    @Html.ValidationSummary(true)
+
+<table class="table table-condensed">
+    <tr>
+        <th>
+            Nom
+        </th>
+
+        <th>
+            Prenom
+        </th>
+        <th>
+            absence
+        </th>
+        @*<th>
+            presence
+        </th>*@
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in ViewBag.check)
+    {
+        <tr class="info">
+            <td>
+                @item.Nom
+            </td>
+
+
+            <td>
+                @item.Prenom
+            </td>
+           
+            <td>
+                @*@item.IsPresnece*@
+              @*@Html.CheckBoxFor(c => c.IsPresence);*@
+                <input type="checkbox" name="presence" value=@item.IsPresnece  >
+               
+            </td>
+             @*<td>
+            <input type="radio" name="presence" value="1" checked>*@
+
+        </tr>
+
+    }
+</table>
+
+<p>
+    <input type="submit" value="Create" />
+</p>
+}
+
+<div>
+    /
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+    Hello

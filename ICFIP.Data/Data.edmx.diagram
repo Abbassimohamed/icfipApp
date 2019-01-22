@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="58417baf51b94aa9a894de466057f137" Name="Diagram1" ZoomLevel="85">
+        <AssociationConnector Association="ICFIPModel.UserProfilewebpages_Roles" />
+        <EntityTypeShape EntityType="ICFIPModel.Administrateur" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.BTP" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.BTS" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Calendrier" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.CAP" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Cour" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Emploie" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Enseignant" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Etudiant" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Formation" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ICFIPModel.mois" Width="1.5" PointX="4.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Niveau" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ICFIPModel.NiveauFormation" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Note" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Presence" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="ICFIPModel.PresenceEnse" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Salle" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Semestre" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Sendmail" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Specialite" Width="1.5" PointX="10.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ICFIPModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="10.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Tab_BTP" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Tab_BTS" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.Tab_CAP" Width="1.5" PointX="12.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ICFIPModel.TypeSexe" Width="1.5" PointX="12.75" PointY="9.75" />
+        <EntityTypeShape EntityType="ICFIPModel.TypeSpecialite" Width="1.5" PointX="12.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ICFIPModel.UserProfile" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ICFIPModel.webpages_Membership" Width="1.5" PointX="2.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ICFIPModel.webpages_OAuthMembership" Width="1.5" PointX="4.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ICFIPModel.webpages_Roles" Width="1.5" PointX="6.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ICFIPModel.webpages_UsersInRoles" Width="1.5" PointX="8.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ICFIPModel.BultainGenral" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VtPEnsig" Width="1.5" PointX="14.75" PointY="9.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VueAbsence" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VueBultain" Width="1.5" PointX="10.75" PointY="15.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VueFormationNiveau" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VueNote" Width="1.5" PointX="16.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ICFIPModel.VTotalAbsence" Width="1.5" PointX="5.375" PointY="16.75" />
+        <EntityTypeShape EntityType="ICFIPModel.calendr" Width="1.5" PointX="7.375" PointY="16.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

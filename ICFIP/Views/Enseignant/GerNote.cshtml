@@ -1,0 +1,76 @@
+﻿@*@model ICFIP.Entites.VueBultain*@
+@model IEnumerable<Tuple<ICFIP.Entites.Etudiant, ICFIP.Entites.Note>>
+@{
+    ViewBag.Title = "GerNote";
+}
+
+<h2>GerNote</h2>
+
+
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>VueBultain</legend>
+@foreach (var item4 in Model)
+    {
+        <div class="editor-label">
+            @Html.LabelFor(model => item4.Item1.Nom)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item4.Item1.Nom)
+            @Html.ValidationMessageFor(model => item4.Item1.Nom)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => item4.Item1.Prenom)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item4.Item1.Prenom)
+            @Html.ValidationMessageFor(model => item4.Item1.Prenom)
+        </div>
+}
+@foreach (var item5 in Model)
+    {
+        <div class="editor-label">
+            @Html.LabelFor(model => item5.Item2.Note1)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item5.Item2.Note1)
+            @Html.ValidationMessageFor(model => item5.Item2.Note1)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => item5.Item2.Note2)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item5.Item2.Note2)
+            @Html.ValidationMessageFor(model => item5.Item2.Note2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => item5.Item2.Note3)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item5.Item2.Note3)
+            @Html.ValidationMessageFor(model => item5.Item2.Note3)
+        </div>
+}
+        
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,119 @@
+﻿@model ICFIP.Entites.Etudiant
+
+@{
+    ViewBag.Title = "DetailEtudiant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Detail Etudiant</h2>
+            </div>
+
+
+            <div class="panel-body">
+
+                <div class="row col-md-6 col-md-offset-3  ">
+
+
+
+
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.Nom)
+                        :
+                        @Html.DisplayFor(model => model.Nom)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.Prenom)
+                        :
+                        @Html.DisplayFor(model => model.Prenom)
+                    </div>
+
+
+
+                    <div class="editor-label">
+
+
+                        @Html.DisplayNameFor(model => model.DateNiassance)
+                        :
+                        @Html.DisplayFor(model => model.DateNiassance)
+                    </div>
+
+
+                    <div class="display-label">
+                        @Html.DisplayName("Niveau")
+                        :
+                        @Html.DisplayFor(model => model.IdNiveau)
+                    </div>
+
+                
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.Email)
+                        :
+                        @Html.DisplayFor(model => model.Email)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.Matricule)
+                        :
+                        @Html.DisplayFor(model => model.Matricule)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.LieDeNaissene)
+                        :
+                        @Html.DisplayFor(model => model.LieDeNaissene)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayNameFor(model => model.NCin)
+                        :
+                        @Html.DisplayFor(model => model.NCin)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Specialite")
+                        :
+                        @ViewBag.libelspec
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Formation")
+                        :
+                        @ViewBag.libelfor
+                    </div>
+
+
+
+
+
+
+
+                    <p class="btn btn-primary">
+                        @Html.ActionLink("Modifier", "Pssagemodetudi", new { id = Model.Idetudiant })
+                    </p>
+                    <p class="btn btn-primary">
+
+                        @Html.ActionLink("Retourner", "GetListEtudiant")
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

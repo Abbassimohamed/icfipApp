@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <link href="~/Content/template.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+    <script src="~/Scripts/anim.js"></script>
+            @Styles.Render("~/Content/css")
+            @Scripts.Render("~/bundles/modernizr")
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/jqueryval")
+
+
+
+
+     <style>
+
+
+     </style>
+
+
+    <style>
+        /* make keyframes that tell the start state and the end state of our object */
+        @@-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @@-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            opacity: 0; /* make things invisible upon start */
+            -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+
+            .fade-in.one {
+                -webkit-animation-delay: 0.7s;
+                -moz-animation-delay: 0.7s;
+                animation-delay: 0.7s;
+            }
+
+            .fade-in.two {
+                -webkit-animation-delay: 1.2s;
+                -moz-animation-delay: 1.2s;
+                animation-delay: 1.2s;
+            }
+
+            .fade-in.three {
+                -webkit-animation-delay: 1.6s;
+                -moz-animation-delay: 1.6s;
+                animation-delay: 1.6s;
+            }
+
+        /*---make a basic box ---*/
+    </style>
+
+
+    
+</head>
+
+
+   
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <nav class="navbar  alert   btn    btn-block navbar-inverse  " style="color:white">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand  " href="#">ICFIP</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav  " style="font-family:'Times New Roman', Times, serif;font-size:110%;">
+
+                                <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
+                                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                                @if (Request.IsAuthenticated)
+                        {
+                            if (User.IsInRole("Admin"))
+                            {
+                                <li>@Html.ActionLink("Espace Administrateur", "Index", "administrateur")</li>
+
+                            }
+                            if (User.IsInRole("Enseignant"))
+                            {
+                                <li>   @Html.ActionLink("Espace Enseignant", "Index", "Enseignant")</li>
+
+                            }
+                            if (User.IsInRole("Etudiant"))
+                            {
+                                <li>   @Html.ActionLink("Espace Etudiant", "Index", "Etudiant")</li>
+
+
+                            }
+                        }
+
+
+                                <li>
+
+
+
+
+                            </ul>
+
+
+
+                            <ul class="nav navbar-nav navbar-right ">
+                                @if (!Request.IsAuthenticated)
+                        {
+                                    <li>
+                                        @Html.ActionLink("s'identifier", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+                                    </li>
+
+                            if (User.IsInRole("Admin"))
+                            {
+                                <li>@Html.ActionLink("MOT DE PASSE", "_ChangePasswordPartial", "Account")</li>
+
+                            }
+                        }
+                                <li>
+
+
+                                    @if (Request.IsAuthenticated)
+                            {
+                                        <text>
+
+                                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                    {
+                                                @Html.AntiForgeryToken()
+                                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Se Déconnecter</a></li>
+                                    }
+                                        </text>
+
+
+                            }
+
+
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+                    </nav>
+
+                <div class="content-wrapper container-fluid  body-content content">
+
+
+
+                    <div>
+                        @RenderBody()
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12  ">
+                    <div class="container   navbar  alert   btn    btn-block navbar-inverse  ">
+                        <div class="row">
+                            <div class="footer">
+                                <div class="container">
+                                    <div class="row">
+                                        Adresse :    ICFIP
+                                        R6- 18Janvier
+                                        1952-5000
+                                        Monastir Tunisie
+                                  
+                                        <br>
+                                Tél : (216) 98519863 /  55019863 - Fax : (216)73466471 - Email : contact@icfip-tunisie.com
+                                        <br>
+
+
+
+                                    </div>
+                                    <div style="color:white">
+                                        &copy;tout droit réservé  ICFIP  @DateTime.Now.Year/@DateTime.Now.AddYears(1).Year
+                                </div>
+                                    <!--/.row-->
+                                </div>
+                                <!--/.container-->
+                            </div>
+                        </div><!--/row-->
+
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </div>
+                    @RenderSection("scripts", required: false)
+                    <script src="~/Scripts/js/bootstrap.js"></script>
+                    <script src="~/Scripts/js/bootstrap.min.js"></script>
+                    <script src="~/Scripts/js/npm.js"></script>
+
+
+
+
+</body>
+</html>

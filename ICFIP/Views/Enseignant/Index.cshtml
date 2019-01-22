@@ -1,0 +1,146 @@
+﻿@{
+
+
+
+    ViewBag.Title = "";
+}
+
+
+
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script>
+
+
+
+    $(function () {
+        $("#btnAbs").click(function () {
+
+            var Idfor = document.getElementById("for").options[document.getElementById('for').selectedIndex].value;
+            var Idspec = document.getElementById("spec").options[document.getElementById('spec').selectedIndex].value;
+            var Idcour = document.getElementById("cour").options[document.getElementById('cour').selectedIndex].value;
+            var Idniv = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var Idsem = document.getElementById("sem").options[document.getElementById('sem').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterAbs")' + "?Idfo=" + Idfor + "+&Idspec=" + Idspec + "&Idcour=" + Idcour + "&Idni=" + Idniv + "&Idsem=" + Idsem
+            $(this).attr("href", path);
+
+        });
+
+
+    });
+
+
+
+    $(function () {
+        $("#btnNote").click(function () {
+
+            var Idfor = document.getElementById("for").options[document.getElementById('for').selectedIndex].value;
+            var Idspec = document.getElementById("spec").options[document.getElementById('spec').selectedIndex].value;
+            var Idcour = document.getElementById("cour").options[document.getElementById('cour').selectedIndex].value;
+            var Idniv = document.getElementById("niv").options[document.getElementById('niv').selectedIndex].value;
+            var Idsem = document.getElementById("sem").options[document.getElementById('sem').selectedIndex].value;
+            var path = '@Url.Content("~/Enseignant/AjouterNote")' + "?Idfo=" + Idfor + "+&Idspec=" + Idspec + "&Idcour=" + Idcour + "&Idni=" + Idniv + "&Idsem=" + Idsem
+            $(this).attr("href", path);
+
+        });
+
+
+    });
+
+
+</script>
+
+
+
+
+    <div class="row">
+
+        <div class="col-md-6 col-md-offset-3 ">
+            <div class="panel-group">
+                <div class="panel panel-primary">
+
+
+
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.ValidationSummary(true)
+
+
+                        <div class="panel-body">
+
+
+
+
+                            <div>
+                                @Html.DropDownList("IdGroupFormation", null, "Selectionnez Formation", new { @class = "form-control btn-primary", id = "for" })
+                            </div>
+                            <br>
+
+                            <div>
+                                @Html.DropDownList("IdGroupspecialite", null, "Selectionnez Specialite", new { @class = "form-control btn-primary", id = "spec" })
+                            </div>
+                            <br>
+
+                            <div>
+                                @Html.DropDownList("IdGroupCour", null, "Selectionnez  Cour", new { @class = "form-control btn-primary", id = "cour" })
+                            </div>
+                            <br>
+
+                            <br>
+
+                            <div>
+                                @Html.DropDownList("IdGroupNiveau", null, "Selectionnez  Niveau", new { @class = "form-control btn-primary", id = "niv" })
+                            </div>
+                            <br>
+
+
+                            <div>
+                                @Html.DropDownList("IdGroupsimestre", null, "Selectionnez  Semestre", new { @class = "form-control btn-primary", id = "sem" })
+                            </div>
+
+                            <br>
+
+                            <div class="btn  btn-primary ">
+
+                                @Html.ActionLink("Absence", "AjouterAbs", "Enseignant", null, new { @id = "btnAbs" })
+                            </div>
+                            <div class="btn  btn-primary ">
+                                @Html.ActionLink("Note", "AjouterNote", "Enseignant", null, new { @id = "btnNote" })
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <style>
+        a {
+            color: white;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+

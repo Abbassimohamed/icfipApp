@@ -1,0 +1,49 @@
+﻿@model ICFIP.Entites.Formation
+
+@{
+    ViewBag.Title = "DetailsFormation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Details Formation</h2>
+            </div>
+
+            <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+
+
+
+                    <div class="display-label">
+                        @Html.DisplayName("Formation")
+                        :
+                        @Html.DisplayFor(model => model.LibelleFormation)
+                    </div>
+
+                    <div class="display-label">
+                        @Html.DisplayName("Description")
+                        :
+                        @Html.DisplayFor(model => model.DescriptionFormation)
+                    </div>
+
+                    <p class="btn btn-primary">
+                        @Html.ActionLink("Modifier", "PssageditFormat", new { id = Model.IdFormation })
+                    </p>
+                    <p class="btn btn-primary">
+                        @Html.ActionLink("Retourner", "GereFormation")
+                    </p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<style>
+    a {
+        color: white;
+    }
+</style>

@@ -1,0 +1,58 @@
+﻿@model ICFIP.Models.RegisterModel
+@{
+    ViewBag.Title = "Create a new account";
+}
+
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+</style>
+<div id="regid" style="width:20%; margin-left:40%; margin-top:10%;">
+    <hgroup class="title">
+        <h2>@ViewBag.Title.</h2>
+        
+    </hgroup>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+
+
+
+
+   
+        <div>
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "User Name", @id = "inputSuccess1" })
+        </div>
+        <br />
+
+        <div>
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+        </div>
+        <br />
+
+        <div>
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password" })
+        </div>
+        <br />
+   
+        <input type="submit" value="Register" style="margin-left:40%;" class="btn btn-info" />
+    
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+ 

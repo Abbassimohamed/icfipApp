@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ICFIP.Entites.VueBultain>
+
+
+<table class="table table-condensed">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.IdCour)*@
+        </th>
+
+        <th>
+            @*@Html.DisplayNameFor(model => model.Idetudiant)*@
+        </th>
+  
+        <th>
+            @Html.DisplayNameFor(model => model.Libelle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note2)
+        </th>
+        <th>
+            Examen
+        </th>
+  
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="info">
+            <td>
+                @Html.HiddenFor(modelItem => item.IdCour)
+            </td>
+
+            <td>
+                @Html.HiddenFor(modelItem => item.Idetudiant)
+            </td>
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.Libelle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note3)
+            </td>
+          
+        </tr>
+    }
+
+</table>

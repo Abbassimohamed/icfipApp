@@ -1,0 +1,64 @@
+﻿@model ICFIP.Entites.Enseignant
+
+@{
+    ViewBag.Title = "AjouterAbsEnseigant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-primary col-md-4 col-md-offset-4"> Ajouter Absence Enseigant</h2>
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <table class="table table-bordered">
+        <tr class="btn-primary">
+            
+            <td>Nome </td>
+            <td>Prenom</td>
+            <td>Presence </td>
+           
+           
+
+
+
+        </tr>
+
+
+            <tr class="info">
+                
+                <td>@Html.DisplayFor(m => Model.Nom)</td>
+                <td>@Html.DisplayFor(m => Model.Prenom)</td>
+                <td>@Html.CheckBoxFor(m => Model.BoolIsPresnece)</td>
+                @Html.HiddenFor(m => Model.Idenseignant)
+                @Html.HiddenFor(m => Model.IdCour)
+
+                @Html.HiddenFor(m => Model.UserId)
+
+            </tr>
+    
+    </table>
+
+
+    <div>
+
+        <input type="submit" class="btn btn-primary" value="Enregistrer" />
+
+    </div>
+}
+
+<div class="btn btn-primary">
+    @Html.ActionLink("Retourner", "GetListEnseignant")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

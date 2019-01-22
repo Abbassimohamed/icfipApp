@@ -1,0 +1,69 @@
+﻿@model ICFIP.Entites.Enseignant
+
+@{
+    ViewBag.Title = "DeleteEnseignant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+
+                <h2>Suprimer Enseignant</h2>
+
+                <h3>Vous etes?</h3>
+            </div>
+
+            <div class="panel-body">
+
+
+
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Nom)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Nom)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Prenom)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Prenom)
+                </div>
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                <p >
+                    <input type="submit" class="btn btn-primary" value="Supprimer" />
+                </p >
+                <p class="btn btn-primary">
+                    
+                        @Html.ActionLink("Retourner", "GetListEnseignant")
+                    
+                </p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

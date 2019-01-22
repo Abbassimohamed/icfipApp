@@ -1,0 +1,100 @@
+﻿@model ICFIP.Entites.Enseignant
+
+@{
+    ViewBag.Title = "DetailEnseignant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Detail Enseignant</h2>
+            </div>
+
+            <div class="panel-body">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-group">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading"></div>
+                                <div class="row">
+                                    <div class="col-md-6 col">
+                                        <div class="col-md-8 col">
+                                           
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.Nom)
+                                            :
+                                                @Html.DisplayFor(model => model.Nom)
+                                            </div>
+
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.Prenom)
+                                          :
+                                                @Html.DisplayFor(model => model.Prenom)
+                                            </div>
+
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.DateNaissance)
+                                           :
+                                                @Html.DisplayFor(model => model.DateNaissance)
+                                            </div>
+
+                                        
+
+                                            <div class="display-label">
+                                                @Html.DisplayName("Cour")
+                                           :
+                                                @ViewBag.libelcour
+                                            </div>
+
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.Email)
+                                            :
+                                                @Html.DisplayFor(model => model.Email)
+                                            </div>
+
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.Tel)
+                                           :
+                                                @Html.DisplayFor(model => model.Tel)
+                                            </div>
+
+                                            <div class="display-label">
+                                                @Html.DisplayNameFor(model => model.NCin)
+                                            :
+                                                @Html.DisplayFor(model => model.NCin)
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="btn btn-primary">
+                    @Html.ActionLink("Modifier", "editEnseignant", new {  id=Model.Idenseignant  })
+                </p>
+                <p class="btn btn-primary">
+                    @Html.ActionLink("Retourner", "GetListEnseignant")
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    a {
+        color: white;
+    }
+</style>

@@ -1,0 +1,108 @@
+﻿
+
+@{
+    ViewBag.Title = "";
+
+}
+
+
+
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script>
+  
+    $(function () {
+        $("#btnNote").click(function () {
+
+            var Id = document.getElementById("not").options[document.getElementById('not').selectedIndex].value;
+            $("#viewPlaceHolder").load("/Etudiant/GetView",
+             { idcour: Id, ViewName: "Note" })
+          
+        });
+        $("#btnAbs").click(function () {
+
+            var Id = document.getElementById("not").options[document.getElementById('not').selectedIndex].value;
+            $("#viewPlaceHolder").load("/Etudiant/GetView",
+             { idcour: Id, ViewName: "absence" })
+
+        });
+        $("#btnAllNote").click(function () {
+
+            //appelle de fonction GetView  pour recuperer la liste de tous les notes d'un étudiant authentifé
+            //on passe idcour =0 on n'a pas besoin de lui mais pour l'appelle de fonction qu'il soit correct
+            $("#viewPlaceHolder").load("/Etudiant/GetView",
+             { idcour: 1, ViewName: "GlobalNoteVue" })
+
+        });
+        $("#btnAllabs").click(function () {
+
+            //appelle de fonction GetView  pour recuperer la liste de tous les notes d'un étudiant authentifé
+            //on passe idcour =0 on n'a pas besoin de lui mais pour l'appelle de fonction qu'il soit correct
+            $("#viewPlaceHolder").load("/Etudiant/GetView",
+             { idcour: 1, ViewName: "GlobalabsVue" })
+
+        });
+        $("#btnbutton").click(function () {
+
+            //appelle de fonction GetView  pour recuperer la liste de tous les notes d'un étudiant authentifé
+            //on passe idcour =0 on n'a pas besoin de lui mais pour l'appelle de fonction qu'il soit correct
+            $("#viewPlaceHolder").load("/Etudiant/GetView",
+             { idcour: 1, ViewName: "bulletin" })
+
+        });
+    });
+    
+ 
+</script>
+
+
+<!-- Large modal -->
+
+
+
+      @using (Html.BeginForm())
+      {
+        @Html.ValidationSummary(true)
+    <fieldset>
+
+
+
+
+        <div class="row-flouid">
+
+
+            <div class="col-xs-4 col-md-3">
+                @*style="width:50% ;margin-top:40%"*@
+                <div class="col-md-8 col-md-offset-2">
+                    @Html.DropDownList("GroupId", null, "Select Matiere ", new { @class = "form-control btn-info", id = "not" })
+
+
+
+
+
+                    <br>
+                    <input type="button" class="btn-info btn-lg btn-block" value="Note" id="btnNote" />
+                    <br>
+                    <input type="button" class="btn-info btn-lg btn-block " value="Absence" id="btnAbs" />
+                    <br>
+                    <input type="button" class="btn-info btn-lg btn-block" value="tous les notes" id="btnAllNote" />
+                    <br>
+                    <input type="button" class="btn-info btn-lg btn-block" value="tous les absences" id="btnAllabs" />
+                    <br>
+                    <input type="button" class="btn-info btn-lg btn-block" value="Bulltin" id="btnbutton" />
+                    <br>
+                </div>
+
+            </div>
+
+
+                        <div class="col-xs-11 col-md-6 ">
+                            <div id="viewPlaceHolder"></div>
+                        </div>
+                
+               
+            </div>
+  
+    </fieldset>
+
+
+      }

@@ -1,0 +1,49 @@
+﻿@model ICFIP.Entites.Salle
+
+@{
+    ViewBag.Title = "Detail Salle";
+}
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel-group">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+                <h2>Details Salle</h2>
+            </div>
+            <div class="panel-body">
+
+                <div class="display-label">
+                    @*@Html.DisplayNameFor(model => model.IdSalle)*@
+                </div>
+                <div class="display-field">
+                    @Html.HiddenFor(model => model.IdSalle)
+                </div>
+
+                <div class="display-label">
+                    @*@Html.DisplayNameFor(model => model.IdAdministrateur)*@
+                </div>
+                <div class="display-field">
+                    @Html.HiddenFor(model => model.IdAdministrateur)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Libelle)
+                    :
+                    @Html.DisplayFor(model => model.Libelle)
+                </div>
+
+                <p>
+                    <h1 class="btn btn-info">
+                        @Html.ActionLink("Modifier", "Editsalle", new { id = Model.IdSalle })
+                    </h1> |
+                    <h1 class="btn btn-info">
+                        @Html.ActionLink("Retourner", "Index")
+                    </h1>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

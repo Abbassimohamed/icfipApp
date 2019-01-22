@@ -1,0 +1,98 @@
+﻿@model ICFIP.Entites.BTP
+
+@{
+    ViewBag.Title = "EditBtp";
+}
+
+
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+
+    .modal-body {
+        max-height: calc(85vh - 210px);
+        overflow-y: auto;
+    }
+</style>
+
+
+<div style="margin-top:5%" class="row">
+    <div style="margin-left:37%">
+        <h2>Editer Btp</h2>
+    </div>
+</div>
+<div class="col-md-7 col-md-offset-4 modal-body ">
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>BTP</legend>
+
+            <div class="editor-label">
+                @*@Html.LabelFor(model => model.IdBtp)*@
+            </div>
+            <div class="editor-field">
+                @Html.HiddenFor(model => model.IdBtp)
+                @Html.ValidationMessageFor(model => model.IdBtp)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Homolgue)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Homolgue)
+                @Html.ValidationMessageFor(model => model.Homolgue)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Libelle)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Libelle)
+                @Html.ValidationMessageFor(model => model.Libelle)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.nbrannee)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.nbrannee)
+                @Html.ValidationMessageFor(model => model.nbrannee)
+            </div>
+
+            <div class="editor-label">
+                @*@Html.LabelFor(model => model.IdNiveau)*@
+            </div>
+            <div class="editor-field">
+                @Html.HiddenFor(model => model.IdNiveau)
+                @Html.ValidationMessageFor(model => model.IdNiveau)
+            </div>
+
+            <p>
+                <input type="submit" class="btn btn-info" value="sauvgarder" />
+            </p>
+        </fieldset>
+    }
+
+
+    <div class="btn btn-info">
+        @Html.ActionLink("retourner", "Index")
+    </div>
+</div>
+
+   
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

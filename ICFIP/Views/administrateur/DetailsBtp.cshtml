@@ -1,0 +1,73 @@
+﻿@model ICFIP.Entites.BTP
+
+@{
+    ViewBag.Title = "DetailsBtp";
+}
+
+
+
+<style>
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+
+    .modal-body {
+        max-height: calc(85vh - 210px);
+        overflow-y: auto;
+    }
+</style>
+<div style="margin-top:5%" class="row">
+    <div style="margin-left:37%">
+        <h2>Details Btp</h2>
+    </div>
+</div>
+<div style="margin-left:34%">
+    <fieldset>
+        <legend>BTP</legend>
+
+        <div class="display-label">
+            @*@Html.DisplayNameFor(model => model.IdBtp)*@
+        </div>
+        <div class="display-field">
+            @Html.HiddenFor(model => model.IdBtp)
+        </div>
+
+        <div class="display-label">
+            @*@Html.DisplayNameFor(model => model.Homolgue)*@
+        </div>
+        <div class="display-field">
+            @Html.HiddenFor(model => model.Homolgue)
+        </div>
+
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Libelle)
+      :
+            @Html.DisplayFor(model => model.Libelle)
+        </div>
+
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.nbrannee)
+      :
+            @Html.DisplayFor(model => model.nbrannee)
+        </div>
+
+        <div class="display-label">
+            @*@Html.DisplayNameFor(model => model.IdNiveau)*@
+        </div>
+        <div class="display-field">
+            @Html.HiddenFor(model => model.IdNiveau)
+        </div>
+    </fieldset>
+    <p>
+        <h1 class="btn btn-info">
+            @Html.ActionLink("Modifier", "EditBtp", new { id = Model.IdBtp })
+        </h1> |
+            <h1 class="btn btn-info">
+                @Html.ActionLink("Retourner", "Index")
+            </h1>
+</p>
